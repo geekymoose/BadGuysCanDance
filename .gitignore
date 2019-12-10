@@ -1,3 +1,21 @@
+# ------------------------------------------------------------------------------
+# VScode
+# ------------------------------------------------------------------------------
+
+# Get latest from https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+
+# ------------------------------------------------------------------------------
+# Unity
+# ------------------------------------------------------------------------------
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
