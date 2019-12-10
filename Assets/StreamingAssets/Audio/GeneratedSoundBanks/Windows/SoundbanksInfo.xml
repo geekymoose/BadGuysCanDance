@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>E:\Yoann\GameJam_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Yoann\GameJam_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Yoann\GameJam_UnityProject\wip_surprise\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\Yoann\GameJam_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2014706742" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_Sound</ObjectPath>
+			<ShortName>Main_Sound</ShortName>
+			<Path>Main_Sound.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2063165418" Name="Play_Beep" ObjectPath="\Events\Default Work Unit\Play_Beep" DurationType="OneShot" DurationMin="0.170213" DurationMax="0.170213"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="904634661" Language="SFX">
+					<ShortName>BOOM_INTF_Generic Click Digital 31.wav</ShortName>
+					<Path>SFX\BOOM_INTF_Generic Click Digital 31_38A83220.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

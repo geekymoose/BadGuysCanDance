@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b50d3cd71160284bb9667ccb9275c2a, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5caea8893b422543b6a1efb043288870
+    GuidInternal: 
+    m_lastTime: -8586256140148862466
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: a74769f6fcfbc048b86745c0a7236427
+    GuidInternal: 
+    m_lastTime: -8586256140148742527
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 0412fd09b9481242aa51727459946125
+    GuidInternal: 
+    m_lastTime: -8586256139302468907
+    List:
+    - name: Main_Sound
+      guid: ebfc37a288ea4c478b25d50190bc86c1
+      id: 2014706742
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Sound
+        ObjectType: 7
+      Path: Default Work Unit\Main_Sound
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f0e0e5c98a09964fbb9a904a029f6ada
+    GuidInternal: 
+    m_lastTime: -8586256139449298902
+    List:
+    - name: Play_Beep
+      guid: 47605f31715651479b7636492cc12ac6
+      id: 2063165418
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Beep
+        ObjectType: 3
+      Path: Default Work Unit\Play_Beep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 10e2632d179c9542b7d94f185ed52b04
+    GuidInternal: 
+    m_lastTime: -8586256140148672312
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 44ddc07de2e947468925390c46e69ce5
+    GuidInternal: 
+    m_lastTime: -8586256140148692549
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ca3856d7069ffe47bc45c6c00e9e6871
+    GuidInternal: 
+    m_lastTime: -8586256140148812233
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2dd36f50c0543e4b99671da9cb003068
+    GuidInternal: 
+    m_lastTime: -8586256140148922434
+    List: []
+  ExpandedItems:
+  - /GameJam_WwiseProject
+  - /GameJam_WwiseProject/Events
+  - /GameJam_WwiseProject/Events/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

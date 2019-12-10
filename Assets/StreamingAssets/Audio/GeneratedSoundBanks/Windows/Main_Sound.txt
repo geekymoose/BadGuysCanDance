@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2063165418	Play_Beep			\Default Work Unit\Play_Beep	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	904634661	Beep	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\BOOM_INTF_Generic Click Digital 31_38A83220.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		32744
+
