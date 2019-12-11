@@ -1,6 +1,32 @@
 Event	ID	Name			Wwise Object Path	Notes
+	932654524	Play_SW_Music			\Default Work Unit\Play_SW_Music	
+	1799566024	Set_State_Phase3			\Default Work Unit\Set_State_Phase3	
+	1799566025	Set_State_Phase2			\Default Work Unit\Set_State_Phase2	
+	1799566026	Set_State_Phase1			\Default Work Unit\Set_State_Phase1	
 	2063165418	Play_Beep			\Default Work Unit\Play_Beep	
+	2300403011	Set_State_End			\Default Work Unit\Set_State_End	
+	2302270969	Set_State_Menu			\Default Work Unit\Set_State_Menu	
+	3055616074	Set_State_Menu_InMusic			\Default Work Unit\Set_State_Menu_InMusic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3249315532	ST_Mus			\Default Work Unit\ST_Mus	
+
+State	ID	Name	State Group			Notes
+	0	None	ST_Mus			
+	1231023909	ST_Mus_Phase1	ST_Mus			
+	1231023910	ST_Mus_Phase2	ST_Mus			
+	1231023911	ST_Mus_Phase3	ST_Mus			
+	1264120226	ST_Mus_End	ST_Mus			
+	3450655090	ST_Mus_Menu	ST_Mus			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	122969414	MUS_Menu_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Menu_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Menu_Loop\MUS_Menu_Loop\MUS_Menu_Loop		7121760
+	124852546	MUS_Phase1_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase1_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase1_Loop\MUS_Phase1_Loop\MUS_Phase1_Loop		8797300
+	267877932	MUS_TRANS_Phase1_To_Phase2	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Phase1_To_Phase2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Phase1_To_Phase2\MUS_TRANS_Phase1_To_Phase2		838028
+	397205885	MUS_TRANS_Phase2_To_Phase3	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Phase2_To_Phase3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Phase2_To_Phase3\MUS_TRANS_Phase2_To_Phase3		838028
+	415143516	MUS_TRNAS_Phase3_To_End	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRNAS_Phase3_To_End_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRNAS_Phase3_To_End\MUS_TRNAS_Phase3_To_End		838044
+	513151367	MUS_Phase3_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase3_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase3_Loop\MUS_Phase3_Loop\MUS_Phase3_Loop		7540572
+	568681946	MUS_TRANS_Menu_To_Phase1	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Menu_To_Phase1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\MUS_TRANS_Menu_To_Phase1		838044
+	640674342	MUS_Phase2_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase2_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase2_Loop\MUS_Phase2_Loop\MUS_Phase2_Loop		3770388
 	904634661	Beep	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\BOOM_INTF_Generic Click Digital 31_38A83220.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		32744
 
