@@ -18,10 +18,11 @@ public class HunterPlayerController : MonoBehaviour
         Debug.Log("Fire");
         if (hitInfo.collider != null)
         {
-            if(hitInfo.transform.gameObject.GetComponentInParent<SnapGridCharacter>() != null)
+            SnapGridCharacter character = hitInfo.transform.gameObject.GetComponentInParent<SnapGridCharacter>();
+            if (character != null)
             {
-                Debug.Log("Hit player");
-                Destroy(hitInfo.transform.gameObject.GetComponentInParent<SnapGridCharacter>().gameObject);
+                Debug.Log("Hit a character");
+                character.kill();
             }
         }
     }

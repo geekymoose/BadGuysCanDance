@@ -341,51 +341,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[0]
-      value: 
-      objectReference: {fileID: 331396857}
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[1]
-      value: 
-      objectReference: {fileID: 843806998}
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[2]
-      value: 
-      objectReference: {fileID: 1944174938}
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[3]
-      value: 
-      objectReference: {fileID: 1844629702}
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[4]
-      value: 
-      objectReference: {fileID: 2052316420}
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[5]
-      value: 
-      objectReference: {fileID: 567877633}
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[6]
-      value: 
-      objectReference: {fileID: 835487201}
-    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: AIPlayers.Array.data[7]
-      value: 
-      objectReference: {fileID: 1011292307}
     - target: {fileID: 2041262633823656527, guid: 98c3c000075830c488d792546d7cb793,
         type: 3}
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[0]
+      value: 
+      objectReference: {fileID: 331396857}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[1]
+      value: 
+      objectReference: {fileID: 843806998}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[2]
+      value: 
+      objectReference: {fileID: 1944174938}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[3]
+      value: 
+      objectReference: {fileID: 1844629702}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[4]
+      value: 
+      objectReference: {fileID: 2052316420}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[5]
+      value: 
+      objectReference: {fileID: 567877633}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[6]
+      value: 
+      objectReference: {fileID: 835487201}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: listAIPlayers.Array.data[7]
+      value: 
+      objectReference: {fileID: 1011292307}
     - target: {fileID: 4936439583829563290, guid: 98c3c000075830c488d792546d7cb793,
         type: 3}
       propertyPath: m_LocalPosition.x

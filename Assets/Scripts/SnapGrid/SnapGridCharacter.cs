@@ -23,17 +23,37 @@ public class SnapGridCharacter : MonoBehaviour
         this.UseAIControls();
     }
 
-    private void UseAIControls()
+    public void UseAIControls()
     {
         this.AIController.enabled = true;
         this.playerController.enabled = false;
         this.playerInput.enabled = false;
     }
 
-    private void usePlayerControls()
+    public void UsePlayerControls()
     {
         this.AIController.enabled = false;
         this.playerController.enabled = true;
         this.playerInput.enabled = true;
+    }
+
+    public bool IsAIControls()
+    {
+        return this.AIController.enabled == true;
+    }
+
+    public bool IsPlayerControlled()
+    {
+        return this.playerController.enabled == true;
+    }
+
+    public void kill()
+    {
+        // TODO play sounds
+        this.AIController.enabled = false;
+        this.playerController.enabled = false;
+        this.playerInput.enabled = false;
+
+        this.transform.gameObject.SetActive(false);
     }
 }
