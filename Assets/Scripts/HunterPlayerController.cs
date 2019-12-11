@@ -15,11 +15,13 @@ public class HunterPlayerController : MonoBehaviour
 
         RaycastHit2D hitInfo = Physics2D.Raycast(mouseWorldPos2D, Vector2.zero);
 
+        Debug.Log("Fire");
         if (hitInfo.collider != null)
         {
-            if(hitInfo.transform.gameObject.GetComponentInParent<SnapGridMovement>() != null)
+            if(hitInfo.transform.gameObject.GetComponentInParent<SnapGridCharacter>() != null)
             {
-                Destroy(hitInfo.transform.gameObject.GetComponentInParent<SnapGridMovement>().gameObject);
+                Debug.Log("Hit player");
+                Destroy(hitInfo.transform.gameObject.GetComponentInParent<SnapGridCharacter>().gameObject);
             }
         }
     }
