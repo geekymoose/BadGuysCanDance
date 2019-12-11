@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Assert.IsTrue(this.listAIPlayers.Count == countCharacters, "Missing asset (8 characters expected)");
+        Assert.IsTrue(this.listAIPlayers.Count == countCharacters, "Missing asset (wrong value)");
+        Assert.IsNotNull(this.gameOverEvent, "Missing asset");
 
         // Select a random player
         float randValue = Random.Range(0, 10000);
