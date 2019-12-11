@@ -1,5 +1,20 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3249315532	ST_Mus			\Default Work Unit\ST_Mus	
+
+State	ID	Name	State Group			Notes
+	0	None	ST_Mus			
+	1231023909	ST_Mus_Phase1	ST_Mus			
+	1231023910	ST_Mus_Phase2	ST_Mus			
+	1231023911	ST_Mus_Phase3	ST_Mus			
+	1264120226	ST_Mus_End	ST_Mus			
+	3450655090	ST_Mus_Menu	ST_Mus			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	3170124113	VOICE			\Default Work Unit\Master Audio Bus\VOICE	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
