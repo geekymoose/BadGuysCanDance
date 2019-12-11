@@ -57,10 +57,12 @@ public class SnapGridCharacter : MonoBehaviour
     {
         if(this.IsAIControls())
         {
+            Debug.Log("Killing AI character");
             this.eventAIKilled.Raise();
         }
         else if(this.IsPlayerControlled())
         {
+            Debug.Log("Killing player character");
             this.eventPlayerKilled.Raise();
         }
 

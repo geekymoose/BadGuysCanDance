@@ -54,6 +54,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  gameOverEvent: {fileID: 11400000, guid: d5fc045d056b2bf428d13988e4737fa4, type: 2}
 --- !u!114 &-1818918460956040993
 MonoBehaviour:
   m_ObjectHideFlags: 0
