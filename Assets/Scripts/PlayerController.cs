@@ -1,11 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Assertions;
 
 public class PlayerController : MonoBehaviour
 {
+    private SnapGridMovement movement;
+
+    private void Start()
+    {
+        this.movement = this.GetComponent<SnapGridMovement>();
+        Assert.IsNotNull(this.movement, "Missing asset in component");
+    }
+
+    public void OnInputMove(InputAction.CallbackContext context)
+    {
+        Vector2 directionVector = context.ReadValue<Vector2>();
+        this.movement.Move(directionVector);
+    }
+
+
+#if false
     public float moveDistanceInUnityUnits = 100.0f;
     public float moveDurationInSec = 0.5f;
 
@@ -18,6 +32,18 @@ public class PlayerController : MonoBehaviour
     {
         this.playerCollider = this.GetComponentInChildren<Collider2D>();
         Assert.IsNotNull(this.playerCollider, "Missing Collider");
+    }
+
+    public void OnInputMove(InputAction.CallbackContext context)
+    {
+        if(this.movementState == SnapGridMovementState.IDLE && this.CanMove())
+        {
+            this.moveDirection = context.ReadValue<Vector2>();
+            if(this.moveDirection != Vector2.zero)
+            {
+                this.movementState = SnapGridMovementState.MOVING;
+            }
+        }
     }
 
     public void OnInputMove(InputAction.CallbackContext context)
@@ -61,5 +87,6 @@ public class PlayerController : MonoBehaviour
     {
         this.moveReloadAccumulatorInSec -= Time.fixedDeltaTime;
     }
+#endif
 }
 

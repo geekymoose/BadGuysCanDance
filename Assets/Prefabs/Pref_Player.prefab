@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 4954232010224475432}
   - component: {fileID: -91315702509823642}
   - component: {fileID: 716430035}
+  - component: {fileID: 4011327434269067735}
   m_Layer: 0
   m_Name: Pref_Player
   m_TagString: Untagged
@@ -245,5 +246,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c79de9d2385da04c9b90adbe99d77a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDistanceInUnityUnits: 5
+--- !u!114 &4011327434269067735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123795717229350390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb4cd808445acf4c8f6c5a9faa7b5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapGridData: {fileID: 11400000, guid: 48efaa0b481c60f489f4ca317e669cb7, type: 2}
   moveDurationInSec: 0.5
