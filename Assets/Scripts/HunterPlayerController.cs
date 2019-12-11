@@ -22,7 +22,7 @@ public class HunterPlayerController : MonoBehaviour
             if (character != null)
             {
                 Debug.Log("Hit a character");
-                character.kill();
+                character.Kill();
             }
         }
     }

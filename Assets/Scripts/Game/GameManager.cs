@@ -37,4 +37,14 @@ public class GameManager : MonoBehaviour
             currentAI.ChangeRandomMovementNewDirection();
         }
     }
+
+    public void OnPlayerKilledEvent()
+    {
+        Debug.Log("OnPlayerKilledEvent received");
+    }
+
+    public void OnAIKilledEvent()
+    {
+        Debug.Log("OnPlayerKilledEvent received");
+    }
 }
