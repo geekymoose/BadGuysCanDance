@@ -23,7 +23,7 @@ public class SnapGridAIController : MonoBehaviour
             bool moveDone = this.movement.Move(this.currentMoveDirection);
             if(!moveDone)
             {
-                // Tries to change direction if cannot move with the old dir
+                // Tries to change direction if cannot move with the old dir 
                 this.ChangeRandomMovementDirection();
                 this.movement.Move(this.currentMoveDirection);
             }

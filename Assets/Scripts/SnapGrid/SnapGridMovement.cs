@@ -110,6 +110,12 @@ public class SnapGridMovement : MonoBehaviour
             {
                 continue;
             }
+            else if(hit.distance < 0.5f)
+            {
+                // HACK: This is a quickfix. In some situation, NPC stacks and get locked.
+                // This make sure that, in this unexpected situation, they can exceptionally move.
+                continue;
+            }
             else
             {
                 canMove = false;
