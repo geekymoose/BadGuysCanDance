@@ -89,6 +89,34 @@ public class SnapGridMovement : MonoBehaviour
         return this.movementState == SnapGridMovementState.MOVING;
     }
 
+    public SnapGridMovementDirection GetRandomSnapGridDirection()
+    {
+        return (SnapGridMovementDirection)Random.Range(0, (float)SnapGridMovementDirection.DIRECTIONS_COUNT - 1); // -1 because inclusive
+    }
+
+    public bool CanMoveInDirection(SnapGridMovementDirection direction)
+    {
+        Vector2 moveVector = GetNormVectorFromDirection(direction) * this.snapGridData.snapDistanceInUnityUnits;
+
+        // Check that the target position is not already in use (this is pretty ugly but it's a gamejam)
+        RaycastHit2D[] hits = Physics2D.RaycastAll(this.transform.position, moveVector, this.snapGridData.snapDistanceInUnityUnits);
+
+        bool canMove = true;
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit.collider == this.localCollider)
+            {
+                continue;
+            }
+            else
+            {
+                canMove = false;
+                break;
+            }
+        }
+        return canMove;
+    }
+
     public bool Move(Vector2 moveVectDirection)
     {
         moveVectDirection.Normalize();
@@ -130,39 +158,16 @@ public class SnapGridMovement : MonoBehaviour
             return false;
         }
 
-        Vector2 moveVector = GetNormVectorFromDirection(moveDirection) * this.snapGridData.snapDistanceInUnityUnits;
-        Debug.Log("Move vector debug (for direction " + moveDirection + "): " + moveVector);
-        
-        // Check that the target position is not already in use (this is pretty ugly but it's a gamejam)
-        Debug.DrawLine(this.transform.position, this.transform.position + new Vector3(moveVector.x, moveVector.y, 0.0f), Color.yellow, 0.5f);
-        RaycastHit2D[] hits = Physics2D.RaycastAll(this.transform.position, moveVector, this.snapGridData.snapDistanceInUnityUnits);
-
-        bool canMove = true;
-        foreach (RaycastHit2D hit in hits)
+        if(this.CanMoveInDirection(moveDirection))
         {
-            if (hit.collider == this.localCollider)
-            {
-                continue;
-            }
-            else
-            {
-                canMove = false;
-                break;
-            }
-        }
-        if (canMove)
-        {
+            Vector2 moveVector = GetNormVectorFromDirection(moveDirection) * this.snapGridData.snapDistanceInUnityUnits;
+            Debug.DrawLine(this.transform.position, this.transform.position + new Vector3(moveVector.x, moveVector.y, 0.0f), Color.yellow, 0.5f);
             this.moveReloadAccumulatorInSec = this.moveDurationInSec;
             this.movementState = SnapGridMovementState.MOVING;
             this.transform.Translate(moveVector);
+            return true;
         }
-
-        return true;
-    }
-
-    public bool MoveRandom()
-    {
-        SnapGridMovementDirection direction = (SnapGridMovementDirection)Random.Range(0, (float)SnapGridMovementDirection.DIRECTIONS_COUNT -1); // -1 because inclusive
-        return this.Move(direction);
+        
+        return false;
     }
 }

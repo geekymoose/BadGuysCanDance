@@ -4,6 +4,11 @@ using UnityEngine.Assertions;
 public class SnapGridAIController : MonoBehaviour
 {
     private SnapGridMovement movement;
+    private SnapGridMovementDirection currentDirection;
+
+    // Keep cap u
+
+    // Change direction if: bit reach / cannot do current move
 
     private void Start()
     {
@@ -16,7 +21,8 @@ public class SnapGridAIController : MonoBehaviour
         // Move each 1 sec
         if(Time.time % 1 == 0)
         {
-            this.movement.MoveRandom();
+            SnapGridMovementDirection randomDirection = this.movement.GetRandomSnapGridDirection();
+            this.movement.Move(randomDirection);
         }
     }
 }
