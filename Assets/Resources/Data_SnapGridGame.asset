@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e0402ec7ea37b540a796cd027c29b99, type: 3}
-  m_Name: SnapGridGame
+  m_Name: Data_SnapGridGame
   m_EditorClassIdentifier: 
   snapDistanceInUnityUnits: 1
