@@ -91,7 +91,9 @@ public class SnapGridMovement : MonoBehaviour
 
     public SnapGridMovementDirection GetRandomSnapGridDirection()
     {
-        return (SnapGridMovementDirection)Random.Range(0, (float)SnapGridMovementDirection.DIRECTIONS_COUNT - 1); // -1 because inclusive
+        float rand = Random.Range(0, 10000); // Arbitrary high number
+        SnapGridMovementDirection dir = (SnapGridMovementDirection)(rand % (float)SnapGridMovementDirection.DIRECTIONS_COUNT);
+        return dir;
     }
 
     public bool CanMoveInDirection(SnapGridMovementDirection direction)
@@ -162,6 +164,7 @@ public class SnapGridMovement : MonoBehaviour
         {
             Vector2 moveVector = GetNormVectorFromDirection(moveDirection) * this.snapGridData.snapDistanceInUnityUnits;
             Debug.DrawLine(this.transform.position, this.transform.position + new Vector3(moveVector.x, moveVector.y, 0.0f), Color.yellow, 0.5f);
+
             this.moveReloadAccumulatorInSec = this.moveDurationInSec;
             this.movementState = SnapGridMovementState.MOVING;
             this.transform.Translate(moveVector);
