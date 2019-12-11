@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "SnapGridData", menuName = "ScriptableObjects/SnapGridData", order = 1)]
 public class SnapGridData : ScriptableObject

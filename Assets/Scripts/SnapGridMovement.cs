@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.Assertions;
-using UnityEngine.InputSystem;
 
 public enum SnapGridMovementState
 {
@@ -13,7 +12,9 @@ public enum SnapGridMovementDirection
     LEFT,
     RIGHT,
     UP,
-    DOWN
+    DOWN,
+
+    DIRECTIONS_COUNT // Keep last (internal use)
 }
 
 public class SnapGridMovement : MonoBehaviour
@@ -56,11 +57,6 @@ public class SnapGridMovement : MonoBehaviour
         }
     }
 
-    public bool IsMoving()
-    {
-        return this.movementState == SnapGridMovementState.MOVING;
-    }
-
     private Vector2 GetNormVectorFromDirection(SnapGridMovementDirection moveDirection)
     {
         Vector2 result = new Vector2(0.0f, 0.0f);
@@ -78,8 +74,19 @@ public class SnapGridMovement : MonoBehaviour
             case SnapGridMovementDirection.DOWN:
                 result.y = -1.0f;
                 break;
+            default:
+                Assert.IsTrue(false, "Unsupported direction");
+                break;
         }
         return result;
+    }
+
+
+    // -------------------------------------------------------------------------
+
+    public bool IsMoving()
+    {
+        return this.movementState == SnapGridMovementState.MOVING;
     }
 
     public bool Move(Vector2 moveVectDirection)
@@ -151,5 +158,11 @@ public class SnapGridMovement : MonoBehaviour
         }
 
         return true;
+    }
+
+    public bool MoveRandom()
+    {
+        SnapGridMovementDirection direction = (SnapGridMovementDirection)Random.Range(0, (float)SnapGridMovementDirection.DIRECTIONS_COUNT -1); // -1 because inclusive
+        return this.Move(direction);
     }
 }
