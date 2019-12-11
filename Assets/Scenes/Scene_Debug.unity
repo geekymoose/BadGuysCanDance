@@ -443,7 +443,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 146fb585c5cd6854d92429088fe26e44,
+    WwiseObjectReference: {fileID: 11400000, guid: 78844da70834ed548a377b61ea2c2a9d,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
@@ -550,6 +550,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2041262633823656527, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
         type: 3}
       propertyPath: AIPlayers.Array.data[0]
@@ -590,11 +595,6 @@ PrefabInstance:
       propertyPath: AIPlayers.Array.data[7]
       value: 
       objectReference: {fileID: 1011292307}
-    - target: {fileID: 2041262633823656527, guid: 98c3c000075830c488d792546d7cb793,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 4936439583829563290, guid: 98c3c000075830c488d792546d7cb793,
         type: 3}
       propertyPath: m_LocalPosition.x
