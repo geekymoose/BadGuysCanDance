@@ -162,5 +162,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb4cd808445acf4c8f6c5a9faa7b5d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapGridData: {fileID: 0}
+  snapGridData: {fileID: 11400000, guid: 48efaa0b481c60f489f4ca317e669cb7, type: 2}
   moveDurationInSec: 0.5

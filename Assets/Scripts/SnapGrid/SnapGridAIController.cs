@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.Assertions;
 
-public class PlayerController : MonoBehaviour
+public class SnapGridAIController : MonoBehaviour
 {
     private SnapGridMovement movement;
 
@@ -12,10 +11,13 @@ public class PlayerController : MonoBehaviour
         Assert.IsNotNull(this.movement, "Missing asset in component");
     }
 
-    public void OnInputMove(InputAction.CallbackContext context)
+    private void FixedUpdate()
     {
-        Vector2 directionVector = context.ReadValue<Vector2>();
-        this.movement.Move(directionVector);
+        // Move each 1 sec
+        if(Time.time % 1 == 0)
+        {
+            this.movement.MoveRandom();
+        }
     }
 }
 
