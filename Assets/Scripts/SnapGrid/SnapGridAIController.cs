@@ -15,28 +15,7 @@ public class SnapGridAIController : MonoBehaviour
         this.currentMoveDirection = this.movement.GetRandomSnapGridDirection();
     }
 
-    private void FixedUpdate()
-    {
-        // Apply move each 1 sec
-        if(Time.time % 1 == 0)
-        {
-            bool moveDone = this.movement.Move(this.currentMoveDirection);
-            if(!moveDone)
-            {
-                // Tries to change direction if cannot move with the old dir 
-                this.ChangeRandomMovementDirection();
-                this.movement.Move(this.currentMoveDirection);
-            }
-        }
-
-        // Change dir each 3 secs
-        if(Time.time % 3 == 0)
-        {
-            this.ChangeRandomMovementDirection();
-        }
-    }
-
-    private void ChangeRandomMovementDirection()
+    public void ChangeRandomMovementNewDirection()
     {
         SnapGridMovementDirection newMovementDirection = this.movement.GetRandomSnapGridDirection();
         while (newMovementDirection == this.currentMoveDirection)
@@ -44,6 +23,17 @@ public class SnapGridAIController : MonoBehaviour
             newMovementDirection = this.movement.GetRandomSnapGridDirection();
         }
         this.currentMoveDirection = newMovementDirection;
+    }
+
+    public void Move()
+    {
+        bool moveDone = this.movement.Move(this.currentMoveDirection);
+        if (!moveDone)
+        {
+            // Tries to change direction if cannot move with the old direction (try only once)
+            this.ChangeRandomMovementNewDirection();
+            this.movement.Move(this.currentMoveDirection);
+        }
     }
 }
 
