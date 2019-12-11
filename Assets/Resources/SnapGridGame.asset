@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0402ec7ea37b540a796cd027c29b99, type: 3}
   m_Name: SnapGridGame
   m_EditorClassIdentifier: 
-  snapDistanceInUnityUnits: 5
+  snapDistanceInUnityUnits: 1
