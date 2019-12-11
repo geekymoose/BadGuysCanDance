@@ -278,9 +278,9 @@ MonoBehaviour:
   useCallbacks: 1
   Callbacks:
   - Flags:
-      value: 256
-    FunctionName: PlayBeat
-    GameObject: {fileID: 1045318344}
+      value: 0
+    FunctionName: 
+    GameObject: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 146fb585c5cd6854d92429088fe26e44,
+    WwiseObjectReference: {fileID: 11400000, guid: 78844da70834ed548a377b61ea2c2a9d,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
