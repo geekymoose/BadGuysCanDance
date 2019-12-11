@@ -28,8 +28,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4129656655711864462}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6491329, y: -1.0030555, z: 10.99086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8107701764809283019}
@@ -108,11 +108,11 @@ MonoBehaviour:
   Callbacks:
   - Flags:
       value: 256
-    FunctionName: MoveAllAIs
+    FunctionName: ApplyBeat
     GameObject: {fileID: 0}
   - Flags:
       value: 512
-    FunctionName: ChangeAllAIsDirections
+    FunctionName: ApplyBar
     GameObject: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
@@ -181,8 +181,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4129656656074359936}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6491329, y: -1.0030555, z: 10.99086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8107701764809283019}
