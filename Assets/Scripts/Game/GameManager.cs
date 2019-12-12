@@ -117,6 +117,12 @@ public class GameManager : MonoBehaviour
         countCharacters--;
         this.gameOverEvent.Raise();
         AkSoundEngine.PostEvent("Set_State_End", gameObject);
+
+        // Deactivate characters so that hunter cannot shoot at them in gameover menu
+        for (int k = 0; k < this.listCharacters.Count; ++k)
+        {
+            this.listCharacters[k].enabled = false;
+        }
     }
 
     public void OnAIKilledEvent()

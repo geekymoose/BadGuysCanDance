@@ -61,7 +61,7 @@ public class HunterPlayerController : MonoBehaviour
             AkSoundEngine.PostEvent("Play_SFX_Laser_Hit", gameObject);
 
             Character character = hitInfo.transform.gameObject.GetComponentInParent<Character>();
-            if (character != null)
+            if (character != null && character.isActiveAndEnabled)
             {
                 character.Kill();
             }
