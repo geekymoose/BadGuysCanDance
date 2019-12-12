@@ -8,8 +8,10 @@ public class Character : MonoBehaviour
     public GameEvent eventAIKilled;
     public GameEvent eventPlayerKilled;
 
-    private SnapGridCharacter gridCharacterControl;
+    public SpriteRenderer spriteRenderer; // Hack: GetComponentInChildren<SpriteRenderer> does not work :/
+
     private CharacterData characterData;
+    private SnapGridCharacter gridCharacterControl;
 
     private bool isKilled;
 
@@ -20,6 +22,7 @@ public class Character : MonoBehaviour
         this.gridCharacterControl = this.GetComponent<SnapGridCharacter>();
 
         Assert.IsNotNull(this.gridCharacterControl, "Missing asset");
+        Assert.IsNotNull(this.spriteRenderer, "Missing asset");
 
         Assert.IsNotNull(this.eventPlayerKilled, "Missing asset");
         Assert.IsNotNull(this.eventAIKilled, "Missing asset");
@@ -50,5 +53,6 @@ public class Character : MonoBehaviour
     public void GiveIdentityToThisPoorCharacter(CharacterData characterData)
     {
         this.characterData = characterData;
+        this.spriteRenderer.sprite = characterData.spriteIdle1;
     }
 }

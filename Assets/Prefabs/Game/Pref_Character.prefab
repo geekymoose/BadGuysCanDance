@@ -335,3 +335,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventAIKilled: {fileID: 11400000, guid: c8e1806f24d0964478caf453002f8996, type: 2}
   eventPlayerKilled: {fileID: 11400000, guid: a379bd7487de56747b06426474f03471, type: 2}
+  spriteRenderer: {fileID: 7166116106577036069}
