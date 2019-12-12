@@ -32,11 +32,14 @@ public class SnapGridMovement : MonoBehaviour
     private SnapGridMovementState movementState = SnapGridMovementState.IDLE;
     private Collider2D localCollider; // Collider of this object
 
+    private bool canMove = true;
+
 
     // -------------------------------------------------------------------------
 
     private void Start()
     {
+        this.canMove = true;
         this.localCollider = this.GetComponentInChildren<Collider2D>();
         this.movementState = SnapGridMovementState.IDLE;
 
@@ -56,6 +59,19 @@ public class SnapGridMovement : MonoBehaviour
             this.movementState = SnapGridMovementState.MOVING;
         }
     }
+
+    private void OnEnable()
+    {
+        this.canMove = true;
+    }
+
+    private void OnDisable()
+    {
+        this.canMove = false;
+    }
+
+
+    // -------------------------------------------------------------------------
 
     private Vector2 GetNormVectorFromDirection(SnapGridMovementDirection moveDirection)
     {
@@ -81,12 +97,14 @@ public class SnapGridMovement : MonoBehaviour
         return result;
     }
 
-
-    // -------------------------------------------------------------------------
-
     public bool IsMoving()
     {
         return this.movementState == SnapGridMovementState.MOVING;
+    }
+
+    public bool CanMove()
+    {
+        return this.canMove;
     }
 
     public SnapGridMovementDirection GetRandomSnapGridDirection()
@@ -161,7 +179,7 @@ public class SnapGridMovement : MonoBehaviour
 
     public bool Move(SnapGridMovementDirection moveDirection)
     {
-        if(this.IsMoving())
+        if(this.IsMoving() || !this.canMove)
         {
             return false;
         }

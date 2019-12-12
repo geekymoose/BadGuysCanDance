@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Assertions;
 
 public class Character : MonoBehaviour
@@ -9,6 +7,7 @@ public class Character : MonoBehaviour
     public GameEvent eventPlayerKilled;
 
     public SpriteRenderer spriteRenderer; // Hack: GetComponentInChildren<SpriteRenderer> does not work :/
+    private Collider2D collider;
 
     private CharacterData characterData;
     private SnapGridCharacter gridCharacterControl;
@@ -20,8 +19,10 @@ public class Character : MonoBehaviour
     void Start()
     {
         this.gridCharacterControl = this.GetComponent<SnapGridCharacter>();
+        this.collider = this.GetComponentInChildren<Collider2D>();
 
         Assert.IsNotNull(this.gridCharacterControl, "Missing asset");
+        Assert.IsNotNull(this.collider, "Missing asset");
         Assert.IsNotNull(this.spriteRenderer, "Missing asset");
 
         Assert.IsNotNull(this.eventPlayerKilled, "Missing asset");
@@ -30,6 +31,12 @@ public class Character : MonoBehaviour
 
     public void Kill()
     {
+        if(this.isKilled)
+        {
+            // What? You wanna kill a killed guy? You're definitely ugly!
+            return;
+        }
+
         this.isKilled = true;
         if (this.gridCharacterControl.IsAIControls())
         {
@@ -43,7 +50,12 @@ public class Character : MonoBehaviour
         }
 
         AkSoundEngine.PostEvent(this.characterData.soundKilledEventName, gameObject);
-        this.gameObject.SetActive(false);
+
+        this.gridCharacterControl.DisableControl();
+        this.enabled = false;
+        this.collider.enabled = false;
+        this.spriteRenderer.sprite = this.characterData.spriteKilled;
+        this.spriteRenderer.sortingOrder = 1; // Alive character displayed in fron of killed on (0 is ground)
     }
 
     public bool IsKilled()

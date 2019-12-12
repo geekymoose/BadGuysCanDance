@@ -6,6 +6,7 @@ public class SnapGridCharacter : MonoBehaviour
 {
     private SnapGridAIController AIController;
     private SnapGridPlayerController playerController;
+    private SnapGridMovement movement;
     private PlayerInput playerInput;
 
 
@@ -13,10 +14,12 @@ public class SnapGridCharacter : MonoBehaviour
     {
         this.AIController = this.GetComponent<SnapGridAIController>();
         this.playerController = this.GetComponent<SnapGridPlayerController>();
+        this.movement = this.GetComponent<SnapGridMovement>();
         this.playerInput = this.GetComponent<PlayerInput>();
 
         Assert.IsNotNull(this.AIController, "Missing asset");
         Assert.IsNotNull(this.playerController, "Missing asset");
+        Assert.IsNotNull(this.movement, "Missing asset");
         Assert.IsNotNull(this.playerInput, "Missing asset");
 
         // By default, use AI
@@ -25,6 +28,7 @@ public class SnapGridCharacter : MonoBehaviour
 
     public void UseAIControls()
     {
+        this.movement.enabled = true;
         this.AIController.enabled = true;
         this.playerController.enabled = false;
         this.playerInput.enabled = false;
@@ -32,9 +36,18 @@ public class SnapGridCharacter : MonoBehaviour
 
     public void UsePlayerControls()
     {
+        this.movement.enabled = true;
         this.AIController.enabled = false;
         this.playerController.enabled = true;
         this.playerInput.enabled = true;
+    }
+
+    public void DisableControl()
+    {
+        this.movement.enabled = false;
+        this.AIController.enabled = false;
+        this.playerController.enabled = false;
+        this.playerInput.enabled = false;
     }
 
     public bool IsAIControls()
