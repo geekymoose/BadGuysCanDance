@@ -48,6 +48,7 @@ State	ID	Name	State Group			Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2072812	SFX_Death_Joker	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Joker_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Joker		79660
 	33370147	SFX_Death_Skeletor	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Skeletor_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Skeletor		81456
+	38719499	VOICE_2	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\VOICE_2		216592
 	64009672	SFX_Laser_Hit	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Laser_Hit_019BAC16.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Laser_Hit		46432
 	122969414	MUS_Menu_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Menu_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Menu_Loop\MUS_Menu_Loop\MUS_Menu_Loop		7121760
 	124852546	MUS_Phase1_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase1_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase1_Loop\MUS_Phase1_Loop\MUS_Phase1_Loop		8797300
@@ -55,15 +56,22 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	267877932	MUS_TRANS_Phase1_To_Phase2	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Phase1_To_Phase2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Phase1_To_Phase2\MUS_TRANS_Phase1_To_Phase2		838028
 	269178455	SFX_Death_Jason	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Jason_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Jason		104226
 	345382424	SFX_Death_Terminator	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Terminator_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Terminator		64430
+	347410083	VOICE_1	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\VOICE_1		234276
 	397205885	MUS_TRANS_Phase2_To_Phase3	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Phase2_To_Phase3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Phase2_To_Phase3\MUS_TRANS_Phase2_To_Phase3		838028
 	415143516	MUS_TRNAS_Phase3_To_End	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRNAS_Phase3_To_End_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRNAS_Phase3_To_End\MUS_TRNAS_Phase3_To_End		838044
 	455483616	SFX_Laser_Shoot	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Laser_Shoot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Laser_Shoot		52068
+	468581569	VOICE_Ready	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_Ready_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE_Ready		354724
 	513151367	MUS_Phase3_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase3_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase3_Loop\MUS_Phase3_Loop\MUS_Phase3_Loop		7540572
 	568681946	MUS_TRANS_Menu_To_Phase1	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Menu_To_Phase1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\MUS_TRANS_Menu_To_Phase1		838044
+	627778142	VOICE_Title	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_Title_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE_Title		501772
 	628091291	MUS_Phase0_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase0_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\Mus_Phase0_Loop\MUS_Phase0_Loop\MUS_Phase0_Loop		3351480
 	640674342	MUS_Phase2_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase2_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase2_Loop\MUS_Phase2_Loop\MUS_Phase2_Loop		3770388
 	690158473	SFX_Death_Bibend	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Bibend_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Bibend		75142
 	870581714	SFX_Death_Vader	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Vader_659AAE9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Vader		111368
+	893087453	VOICE_3	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\VOICE_3		217240
 	904634661	Beep	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\BOOM_INTF_Generic Click Digital 31_38A83220.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		32744
 	922908777	SFX_Death_Shredder	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Shredder_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Shredder		54530
+	944922355	VOICE_4	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\VOICE_4		204328
+	985296626	VOICE_GameOver	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_GameOver_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VOICE_GameOver		632972
+	1050916865	VOICE_Dance	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_Dance_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\VOICE_Dance		276764
 
