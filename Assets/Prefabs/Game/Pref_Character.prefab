@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 6293449883086563033}
   - component: {fileID: -5526922081464127369}
   m_Layer: 0
-  m_Name: Pref_SnapGridCharacter
+  m_Name: Pref_Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
