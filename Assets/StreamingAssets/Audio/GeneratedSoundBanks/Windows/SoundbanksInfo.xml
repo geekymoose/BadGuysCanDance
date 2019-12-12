@@ -29,7 +29,7 @@
 				<Event Id="3491373059" Name="Play_SFX_Death_Pennywise" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Pennywise" DurationType="OneShot" DurationMin="0.624640" DurationMax="0.624640"/>
 				<Event Id="3935204712" Name="Play_SFX_Death_Shredder" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Shredder" DurationType="OneShot" DurationMin="0.565854" DurationMax="0.565854"/>
 				<Event Id="4252615758" Name="Play_SFX_Death_Skeletor" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Skeletor" DurationType="OneShot" DurationMin="0.846333" DurationMax="0.846333"/>
-				<Event Id="1156841624" Name="Play_SFX_Death_Terminator" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Terminator" DurationType="OneShot" DurationMin="0.668813" DurationMax="0.668813"/>
+				<Event Id="1156841624" Name="Play_SFX_Death_Terminator" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Terminator" DurationType="OneShot" DurationMin="0.602768" DurationMax="0.602768"/>
 				<Event Id="1318223257" Name="Play_SFX_Death_Vader" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Vader" DurationType="OneShot" DurationMin="1.158757" DurationMax="1.158757"/>
 				<Event Id="2681111161" Name="Play_SFX_Laser_Hit" ObjectPath="\Events\Default Work Unit\Play_SFX_Laser_Hit" DurationType="OneShot" DurationMin="0.482335" DurationMax="0.482335"/>
 				<Event Id="3678284003" Name="Play_SFX_Laser_Shoot" ObjectPath="\Events\Default Work Unit\Play_SFX_Laser_Shoot" DurationType="OneShot" DurationMin="0.368973" DurationMax="0.368973"/>
