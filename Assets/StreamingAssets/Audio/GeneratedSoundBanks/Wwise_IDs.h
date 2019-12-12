@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_BEEP = 2063165418U;
         static const AkUniqueID PLAY_DEATH = 1172822028U;
+        static const AkUniqueID PLAY_SFX_BUTTONCLICK = 395357022U;
         static const AkUniqueID PLAY_SFX_DEATH_BIBEND = 186166397U;
         static const AkUniqueID PLAY_SFX_DEATH_JASON = 3196001096U;
         static const AkUniqueID PLAY_SFX_DEATH_JOKER = 1405572140U;
