@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -38,7 +37,7 @@ public class GameManager : MonoBehaviour
         this.listCharacters = new List<Character>(this.countCharacters);
 
         Assert.IsNotNull(this.listCharacterData, "Missing asset");
-        Assert.IsTrue(this.listCharacterData.Length == this.countCharacters, "Invalid asset value");
+        Assert.IsTrue(this.listCharacterData.Length >= this.countCharacters, "Invalid asset value");
         Assert.IsNotNull(this.gameOverEvent, "Missing asset");
         Assert.IsTrue(this.listSpawnPoints.Length != 0, "Missing asset");
         Assert.IsNotNull(this.characterPrefab, "Missing asset");
