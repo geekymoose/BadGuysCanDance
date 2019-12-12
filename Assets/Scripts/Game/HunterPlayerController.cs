@@ -26,14 +26,13 @@ public class HunterPlayerController : MonoBehaviour
         Cursor.SetCursor(this.crossTexture, offset, CursorMode.Auto);
     }
 
-    private void OnDisable()
-    {
-        //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    }
-
     public void OnInputFire(InputAction.CallbackContext context)
     {
-        this.Fire();
+        if(context.ReadValue<float>() != 0.0f)
+        {
+            // Value == 1 means button pressed (0 means released)
+            this.Fire();
+        }
     }
 
     public bool CanFire()
