@@ -4,14 +4,13 @@ using UnityEngine.Assertions;
 public class GameOverMenu : MonoBehaviour
 {
     public GameObject gameOverHUD;
-
-    private Animation anim;
+    public Animation backgroundAnim;
+    public Animation cardAnim;
 
     private void Start()
     {
-        this.anim = this.GetComponent<Animation>();
-
-        Assert.IsNotNull(this.anim, "Missing asset");
+        Assert.IsNotNull(this.backgroundAnim, "Missing asset");
+        Assert.IsNotNull(this.cardAnim, "Missing asset");
         Assert.IsNotNull(this.gameOverHUD, "Missing asset");
 
         // Default
@@ -21,8 +20,10 @@ public class GameOverMenu : MonoBehaviour
     public void DisplayGameOverHUD()
     {
         Debug.Log("DisplayGameOverHUD");
+
         this.gameOverHUD.SetActive(true);
-        this.anim.Play();
+        this.backgroundAnim.Play();
+        this.cardAnim.Play();
     }
 
     public void HideGameOverHUD()
