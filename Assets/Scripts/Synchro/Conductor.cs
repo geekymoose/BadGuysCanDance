@@ -4,9 +4,11 @@ using UnityEngine;
 public class Conductor : MonoBehaviour
 {
     private List<Brick> listBrick;
+    private bool isPaused;
 
     public void Start()
     {
+        this.isPaused = false;
         this.listBrick = new List<Brick>();
     }
 
@@ -21,8 +23,35 @@ public class Conductor : MonoBehaviour
 
     // -------------------------------------------------------------------------
 
+    public void TogglePause()
+    {
+        this.isPaused = !this.isPaused;
+    }
+
+    public void Pause()
+    {
+        this.isPaused = true;
+    }
+
+    public void RemovePause()
+    {
+        this.isPaused = false;
+    }
+
+    public bool IsPaused()
+    {
+        return this.isPaused == true;
+    }
+
+    // -------------------------------------------------------------------------
+
     public void ApplyBeat()
     {
+        if (this.isPaused)
+        {
+            return;
+        }
+
         foreach(Brick brick in this.listBrick)
         {
             brick.ApplyBeat();
@@ -31,6 +60,11 @@ public class Conductor : MonoBehaviour
 
     public void ApplyBar()
     {
+        if (this.isPaused)
+        {
+            return;
+        }
+
         foreach (Brick brick in this.listBrick)
         {
             brick.ApplyBar();
