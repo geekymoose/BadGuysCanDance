@@ -176,6 +176,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 50c5b9309b180764785188d6037d9c11, type: 2}
   - {fileID: 11400000, guid: 995c597c5b1e60e42ad6b8ed61dbd944, type: 2}
   - {fileID: 11400000, guid: ff3ac4240aff3c840b06f27e3b164a33, type: 2}
+  phase2StartAtNbPlayer: 5
+  phase3StartAtNbPlayer: 3
 --- !u!114 &-1818918460956040993
 MonoBehaviour:
   m_ObjectHideFlags: 0
