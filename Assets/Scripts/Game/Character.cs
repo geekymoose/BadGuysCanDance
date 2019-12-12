@@ -56,4 +56,9 @@ public class Character : MonoBehaviour
         this.characterData = characterData;
         this.spriteRenderer.sprite = characterData.spriteIdle1;
     }
+
+    public CharacterData GetCharacterData()
+    {
+        return this.characterData;
+    }
 }

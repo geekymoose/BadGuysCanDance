@@ -60,7 +60,6 @@ public class Conductor : MonoBehaviour
 
     public void ApplyBar()
     {
-        Debug.Log("BAR");
         if (this.isPaused)
         {
             return;

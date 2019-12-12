@@ -232,6 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6778488045029356431}
+  - component: {fileID: 1933334869513146974}
   m_Layer: 5
   m_Name: Pref_Card_Slot
   m_TagString: Untagged
@@ -263,6 +264,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1933334869513146974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3368362304838636327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64fd161877b6014e975b6aac5a59d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textName: {fileID: 5395624875581484516}
+  textDescription: {fileID: 5246472645696027715}
+  imageCharacter: {fileID: 1877321521743885102}
+  imageCross: {fileID: 7743836332532948638}
 --- !u!1 &4456397348621466903
 GameObject:
   m_ObjectHideFlags: 0

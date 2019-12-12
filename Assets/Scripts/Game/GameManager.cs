@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     private float spawningAIsAfterSeconds = 4.0f; // Hard coded. AIs spawns in X seconds
 
 
-    private void Start()
+    public void Start()
     {
         Assert.IsTrue(this.countCharacters > 1);
 
@@ -52,7 +52,6 @@ public class GameManager : MonoBehaviour
             characterObj.transform.position = new Vector3(50.0f, 0.0f, 0.0f); // Hack: place outside (I had issue with SetActive to false)
             characterObj.GetComponent<Character>().GiveIdentityToThisPoorCharacter(this.listCharacterData[k]);
         }
-
         this.SpawnRandomPlayer();
 
         AkSoundEngine.PostEvent("Set_State_Phase0", gameObject);
@@ -132,5 +131,10 @@ public class GameManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Set_State_Phase3", gameObject);
         }
+    }
+
+    public List<Character> GetListCharacters()
+    {
+        return this.listCharacters;
     }
 }
