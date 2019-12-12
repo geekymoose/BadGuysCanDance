@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         this.SpawnRandomPlayer();
 
         // TODO Start game sound (TMP)
-        AkSoundEngine.PostEvent("Set_State_Phase1", gameObject);
+        AkSoundEngine.PostEvent("Set_State_Phase0", gameObject);
     }
 
     private void Update()
@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
             this.spawningAIsAccumulator += Time.deltaTime;
             if(this.spawningAIsAccumulator >= this.spawningAIsAfterSeconds)
             {
+                AkSoundEngine.PostEvent("Set_State_Phase1", gameObject);
                 this.areAIspaned = true;
                 this.SpawnRandomAIs();
             }
