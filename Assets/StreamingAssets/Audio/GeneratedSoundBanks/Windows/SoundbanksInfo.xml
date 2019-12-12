@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="2063165418" Name="Play_Beep" ObjectPath="\Events\Default Work Unit\Play_Beep" DurationType="OneShot" DurationMin="0.170213" DurationMax="0.170213"/>
 				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\Play_Death" DurationType="OneShot" DurationMin="0.565854" DurationMax="1.158757"/>
+				<Event Id="395357022" Name="Play_SFX_Buttonclick" ObjectPath="\Events\Default Work Unit\Play_SFX_Buttonclick" DurationType="OneShot" DurationMin="1.297938" DurationMax="1.297938"/>
 				<Event Id="186166397" Name="Play_SFX_Death_Bibend" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Bibend" DurationType="OneShot" DurationMin="0.780563" DurationMax="0.780563"/>
 				<Event Id="3196001096" Name="Play_SFX_Death_Jason" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Jason" DurationType="OneShot" DurationMin="1.083521" DurationMax="1.083521"/>
 				<Event Id="1405572140" Name="Play_SFX_Death_Joker" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Joker" DurationType="OneShot" DurationMin="0.827625" DurationMax="0.827625"/>
@@ -134,6 +135,10 @@
 				<File Id="893087453" Language="SFX">
 					<ShortName>VOICE_3.wav</ShortName>
 					<Path>SFX\VOICE_3_D79FB2B7.wem</Path>
+				</File>
+				<File Id="897927918" Language="SFX">
+					<ShortName>SFX_Buttonclick.wav</ShortName>
+					<Path>SFX\SFX_Buttonclick_10C4C929.wem</Path>
 				</File>
 				<File Id="904634661" Language="SFX">
 					<ShortName>BOOM_INTF_Generic Click Digital 31.wav</ShortName>

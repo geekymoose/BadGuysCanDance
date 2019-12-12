@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	186166397	Play_SFX_Death_Bibend			\Default Work Unit\Play_SFX_Death_Bibend	
+	395357022	Play_SFX_Buttonclick			\Default Work Unit\Play_SFX_Buttonclick	
 	932654524	Play_SW_Music			\Default Work Unit\Play_SW_Music	
 	1156841624	Play_SFX_Death_Terminator			\Default Work Unit\Play_SFX_Death_Terminator	
 	1172822028	Play_Death			\Default Work Unit\Play_Death	
@@ -69,6 +70,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	690158473	SFX_Death_Bibend	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Bibend_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Bibend		75142
 	870581714	SFX_Death_Vader	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Vader_659AAE9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Vader		111368
 	893087453	VOICE_3	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\VOICE_3		217240
+	897927918	SFX_Buttonclick	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Buttonclick_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Buttonclick		249412
 	904634661	Beep	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\BOOM_INTF_Generic Click Digital 31_38A83220.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		32744
 	922908777	SFX_Death_Shredder	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Shredder_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Shredder		54530
 	944922355	VOICE_4	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\VOICE_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\VOICE_4		204328
