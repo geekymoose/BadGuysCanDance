@@ -22,15 +22,39 @@
 			<Path>Main_Sound.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2063165418" Name="Play_Beep" ObjectPath="\Events\Default Work Unit\Play_Beep" DurationType="OneShot" DurationMin="0.170213" DurationMax="0.170213"/>
+				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\Play_Death" DurationType="OneShot" DurationMin="0.565854" DurationMax="1.158757"/>
+				<Event Id="186166397" Name="Play_SFX_Death_Bibend" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Bibend" DurationType="OneShot" DurationMin="0.780563" DurationMax="0.780563"/>
+				<Event Id="3196001096" Name="Play_SFX_Death_Jason" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Jason" DurationType="OneShot" DurationMin="1.083521" DurationMax="1.083521"/>
+				<Event Id="1405572140" Name="Play_SFX_Death_Joker" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Joker" DurationType="OneShot" DurationMin="0.827625" DurationMax="0.827625"/>
+				<Event Id="3491373059" Name="Play_SFX_Death_Pennywise" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Pennywise" DurationType="OneShot" DurationMin="0.624640" DurationMax="0.624640"/>
+				<Event Id="3935204712" Name="Play_SFX_Death_Shredder" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Shredder" DurationType="OneShot" DurationMin="0.565854" DurationMax="0.565854"/>
+				<Event Id="4252615758" Name="Play_SFX_Death_Skeletor" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Skeletor" DurationType="OneShot" DurationMin="0.846333" DurationMax="0.846333"/>
+				<Event Id="1156841624" Name="Play_SFX_Death_Terminator" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Terminator" DurationType="OneShot" DurationMin="0.668813" DurationMax="0.668813"/>
+				<Event Id="1318223257" Name="Play_SFX_Death_Vader" ObjectPath="\Events\Default Work Unit\Play_SFX_Death_Vader" DurationType="OneShot" DurationMin="1.158757" DurationMax="1.158757"/>
+				<Event Id="2681111161" Name="Play_SFX_Laser_Hit" ObjectPath="\Events\Default Work Unit\Play_SFX_Laser_Hit" DurationType="OneShot" DurationMin="0.482335" DurationMax="0.482335"/>
+				<Event Id="3678284003" Name="Play_SFX_Laser_Shoot" ObjectPath="\Events\Default Work Unit\Play_SFX_Laser_Shoot" DurationType="OneShot" DurationMin="0.368973" DurationMax="0.368973"/>
 				<Event Id="932654524" Name="Play_SW_Music" ObjectPath="\Events\Default Work Unit\Play_SW_Music" DurationType="Infinite"/>
 				<Event Id="2300403011" Name="Set_State_End" ObjectPath="\Events\Default Work Unit\Set_State_End" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2302270969" Name="Set_State_Menu" ObjectPath="\Events\Default Work Unit\Set_State_Menu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3055616074" Name="Set_State_Menu_InMusic" ObjectPath="\Events\Default Work Unit\Set_State_Menu_InMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1799566027" Name="Set_State_Phase0" ObjectPath="\Events\Default Work Unit\Set_State_Phase0" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1799566026" Name="Set_State_Phase1" ObjectPath="\Events\Default Work Unit\Set_State_Phase1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1799566025" Name="Set_State_Phase2" ObjectPath="\Events\Default Work Unit\Set_State_Phase2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1799566024" Name="Set_State_Phase3" ObjectPath="\Events\Default Work Unit\Set_State_Phase3" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="2072812" Language="SFX">
+					<ShortName>SFX_Death_Joker.wav</ShortName>
+					<Path>SFX\SFX_Death_Joker_10C4C929.wem</Path>
+				</File>
+				<File Id="33370147" Language="SFX">
+					<ShortName>SFX_Death_Skeletor.wav</ShortName>
+					<Path>SFX\SFX_Death_Skeletor_10C4C929.wem</Path>
+				</File>
+				<File Id="64009672" Language="SFX">
+					<ShortName>SFX_Laser_Hit.wav</ShortName>
+					<Path>SFX\SFX_Laser_Hit_019BAC16.wem</Path>
+				</File>
 				<File Id="122969414" Language="SFX">
 					<ShortName>MUS_Menu_Loop.wav</ShortName>
 					<Path>SFX\MUS_Menu_Loop_D79FB2B7.wem</Path>
@@ -39,9 +63,21 @@
 					<ShortName>MUS_Phase1_Loop.wav</ShortName>
 					<Path>SFX\MUS_Phase1_Loop_D79FB2B7.wem</Path>
 				</File>
+				<File Id="126652415" Language="SFX">
+					<ShortName>SFX_Death_Pennywise.wav</ShortName>
+					<Path>SFX\SFX_Death_Pennywise_7FACCF70.wem</Path>
+				</File>
 				<File Id="267877932" Language="SFX">
 					<ShortName>MUS_TRANS_Phase1_To_Phase2.wav</ShortName>
 					<Path>SFX\MUS_TRANS_Phase1_To_Phase2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="269178455" Language="SFX">
+					<ShortName>SFX_Death_Jason.wav</ShortName>
+					<Path>SFX\SFX_Death_Jason_10C4C929.wem</Path>
+				</File>
+				<File Id="345382424" Language="SFX">
+					<ShortName>SFX_Death_Terminator.wav</ShortName>
+					<Path>SFX\SFX_Death_Terminator_10C4C929.wem</Path>
 				</File>
 				<File Id="397205885" Language="SFX">
 					<ShortName>MUS_TRANS_Phase2_To_Phase3.wav</ShortName>
@@ -51,6 +87,10 @@
 					<ShortName>MUS_TRNAS_Phase3_To_End.wav</ShortName>
 					<Path>SFX\MUS_TRNAS_Phase3_To_End_D79FB2B7.wem</Path>
 				</File>
+				<File Id="455483616" Language="SFX">
+					<ShortName>SFX_Laser_Shoot.wav</ShortName>
+					<Path>SFX\SFX_Laser_Shoot_10C4C929.wem</Path>
+				</File>
 				<File Id="513151367" Language="SFX">
 					<ShortName>MUS_Phase3_Loop.wav</ShortName>
 					<Path>SFX\MUS_Phase3_Loop_D79FB2B7.wem</Path>
@@ -59,13 +99,29 @@
 					<ShortName>MUS_TRANS_Menu_To_Phase1.wav</ShortName>
 					<Path>SFX\MUS_TRANS_Menu_To_Phase1_D79FB2B7.wem</Path>
 				</File>
+				<File Id="628091291" Language="SFX">
+					<ShortName>MUS_Phase0_Loop.wav</ShortName>
+					<Path>SFX\MUS_Phase0_Loop_D79FB2B7.wem</Path>
+				</File>
 				<File Id="640674342" Language="SFX">
 					<ShortName>MUS_Phase2_Loop.wav</ShortName>
 					<Path>SFX\MUS_Phase2_Loop_D79FB2B7.wem</Path>
 				</File>
+				<File Id="690158473" Language="SFX">
+					<ShortName>SFX_Death_Bibend.wav</ShortName>
+					<Path>SFX\SFX_Death_Bibend_10C4C929.wem</Path>
+				</File>
+				<File Id="870581714" Language="SFX">
+					<ShortName>SFX_Death_Vader.wav</ShortName>
+					<Path>SFX\SFX_Death_Vader_659AAE9B.wem</Path>
+				</File>
 				<File Id="904634661" Language="SFX">
 					<ShortName>BOOM_INTF_Generic Click Digital 31.wav</ShortName>
 					<Path>SFX\BOOM_INTF_Generic Click Digital 31_38A83220.wem</Path>
+				</File>
+				<File Id="922908777" Language="SFX">
+					<ShortName>SFX_Death_Shredder.wav</ShortName>
+					<Path>SFX\SFX_Death_Shredder_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

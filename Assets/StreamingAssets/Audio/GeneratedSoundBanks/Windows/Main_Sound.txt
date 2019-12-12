@@ -1,18 +1,44 @@
 Event	ID	Name			Wwise Object Path	Notes
+	186166397	Play_SFX_Death_Bibend			\Default Work Unit\Play_SFX_Death_Bibend	
 	932654524	Play_SW_Music			\Default Work Unit\Play_SW_Music	
+	1156841624	Play_SFX_Death_Terminator			\Default Work Unit\Play_SFX_Death_Terminator	
+	1172822028	Play_Death			\Default Work Unit\Play_Death	
+	1318223257	Play_SFX_Death_Vader			\Default Work Unit\Play_SFX_Death_Vader	
+	1405572140	Play_SFX_Death_Joker			\Default Work Unit\Play_SFX_Death_Joker	
 	1799566024	Set_State_Phase3			\Default Work Unit\Set_State_Phase3	
 	1799566025	Set_State_Phase2			\Default Work Unit\Set_State_Phase2	
 	1799566026	Set_State_Phase1			\Default Work Unit\Set_State_Phase1	
+	1799566027	Set_State_Phase0			\Default Work Unit\Set_State_Phase0	
 	2063165418	Play_Beep			\Default Work Unit\Play_Beep	
 	2300403011	Set_State_End			\Default Work Unit\Set_State_End	
 	2302270969	Set_State_Menu			\Default Work Unit\Set_State_Menu	
+	2681111161	Play_SFX_Laser_Hit			\Default Work Unit\Play_SFX_Laser_Hit	
 	3055616074	Set_State_Menu_InMusic			\Default Work Unit\Set_State_Menu_InMusic	
+	3196001096	Play_SFX_Death_Jason			\Default Work Unit\Play_SFX_Death_Jason	
+	3491373059	Play_SFX_Death_Pennywise			\Default Work Unit\Play_SFX_Death_Pennywise	
+	3678284003	Play_SFX_Laser_Shoot			\Default Work Unit\Play_SFX_Laser_Shoot	
+	3935204712	Play_SFX_Death_Shredder			\Default Work Unit\Play_SFX_Death_Shredder	
+	4252615758	Play_SFX_Death_Skeletor			\Default Work Unit\Play_SFX_Death_Skeletor	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3979372760	SW_Death_Character			\Default Work Unit\SW_Death_Character	
+
+Switch	ID	Name	Switch Group			Notes
+	971196139	SW_Death_Bibendum	SW_Death_Character			
+	1098586552	SW_Death_Shredder	SW_Death_Character			
+	1723165980	SW_Death_Joker	SW_Death_Character			
+	1994578398	SW_Death_Skeletor	SW_Death_Character			
+	2043537171	SW_Death_Pennywise	SW_Death_Character			
+	2368303816	SW_Death_Terminator	SW_Death_Character			
+	3477344376	SW_Death_Jason	SW_Death_Character			
+	3755072937	SW_Death_Vader	SW_Death_Character			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3249315532	ST_Mus			\Default Work Unit\ST_Mus	
 
 State	ID	Name	State Group			Notes
 	0	None	ST_Mus			
+	1231023908	ST_Mus_Phase0	ST_Mus			
 	1231023909	ST_Mus_Phase1	ST_Mus			
 	1231023910	ST_Mus_Phase2	ST_Mus			
 	1231023911	ST_Mus_Phase3	ST_Mus			
@@ -20,13 +46,24 @@ State	ID	Name	State Group			Notes
 	3450655090	ST_Mus_Menu	ST_Mus			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2072812	SFX_Death_Joker	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Joker_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Joker		79660
+	33370147	SFX_Death_Skeletor	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Skeletor_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Skeletor		81456
+	64009672	SFX_Laser_Hit	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Laser_Hit_019BAC16.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Laser_Hit		46432
 	122969414	MUS_Menu_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Menu_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Menu_Loop\MUS_Menu_Loop\MUS_Menu_Loop		7121760
 	124852546	MUS_Phase1_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase1_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase1_Loop\MUS_Phase1_Loop\MUS_Phase1_Loop		8797300
+	126652415	SFX_Death_Pennywise	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Pennywise_7FACCF70.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Pennywise		60094
 	267877932	MUS_TRANS_Phase1_To_Phase2	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Phase1_To_Phase2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Phase1_To_Phase2\MUS_TRANS_Phase1_To_Phase2		838028
+	269178455	SFX_Death_Jason	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Jason_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Jason		104226
+	345382424	SFX_Death_Terminator	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Terminator_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Terminator		64430
 	397205885	MUS_TRANS_Phase2_To_Phase3	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Phase2_To_Phase3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Phase2_To_Phase3\MUS_TRANS_Phase2_To_Phase3		838028
 	415143516	MUS_TRNAS_Phase3_To_End	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRNAS_Phase3_To_End_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRNAS_Phase3_To_End\MUS_TRNAS_Phase3_To_End		838044
+	455483616	SFX_Laser_Shoot	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Laser_Shoot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Laser_Shoot		52068
 	513151367	MUS_Phase3_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase3_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase3_Loop\MUS_Phase3_Loop\MUS_Phase3_Loop		7540572
 	568681946	MUS_TRANS_Menu_To_Phase1	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_TRANS_Menu_To_Phase1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Transitions\MUS_TRANS_Menu_To_Phase1\MUS_TRANS_Menu_To_Phase1		838044
+	628091291	MUS_Phase0_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase0_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\Mus_Phase0_Loop\MUS_Phase0_Loop\MUS_Phase0_Loop		3351480
 	640674342	MUS_Phase2_Loop	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\MUS_Phase2_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\SW_Music\Phase\MUS_Phase2_Loop\MUS_Phase2_Loop\MUS_Phase2_Loop		3770388
+	690158473	SFX_Death_Bibend	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Bibend_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Bibend		75142
+	870581714	SFX_Death_Vader	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Vader_659AAE9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Vader		111368
 	904634661	Beep	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\BOOM_INTF_Generic Click Digital 31_38A83220.wem		\Actor-Mixer Hierarchy\Default Work Unit\Beep		32744
+	922908777	SFX_Death_Shredder	E:\Yoann\GameJam_WwiseProject\.cache\Windows\SFX\SFX_Death_Shredder_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_Shredder		54530
 
