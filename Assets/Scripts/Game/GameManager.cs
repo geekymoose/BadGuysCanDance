@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     private Conductor conductor;
     private SnapGridCharacter player;
     private int countCharacters = 8; // Hard coded to 8 characters
-    
+    private List<Character> listCharacters;
+
     private bool areAIspaned = false;
     private float spawningAIsAccumulator = 0.0f;
     private float spawningAIsAfterSeconds = 5.0f; // Hard coded. AIs spawns in X seconds
@@ -21,24 +22,35 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        Assert.IsTrue(this.countCharacters > 1);
+
         this.conductor = this.GetComponent<Conductor>();
+        this.listCharacters = new List<Character>(this.countCharacters);
 
         Assert.IsNotNull(this.gameOverEvent, "Missing asset");
         Assert.IsTrue(this.listSpawnPoints.Length != 0, "Missing asset");
         Assert.IsNotNull(this.characterPrefab, "Missing asset");
         Assert.IsNotNull(this.conductor, "Missing asset");
 
+        // Generate list characters (kind of character pool)
+        for(int k = 0; k < this.countCharacters; ++k)
+        {
+            GameObject characterObj = Instantiate(characterPrefab);
+            Assert.IsNotNull(characterObj.GetComponent<Character>(), "Invalid prefab");
+            this.listCharacters.Add(characterObj.GetComponent<Character>());
+            characterObj.transform.position = new Vector3(50.0f, 0.0f, 0.0f); // Hack: place outside (I had issue with SetActive to false)
+        }
+
         this.SpawnRandomPlayer();
 
-        // TODO Start game sound (TMP)
         AkSoundEngine.PostEvent("Set_State_Phase0", gameObject);
     }
 
     private void Update()
     {
+        // Hack: See SpawnRandomPlayer
         if(this.player != null && !this.player.IsPlayerControlled())
         {
-            // Hack: See SpawnRandomPlayer
             this.player.UsePlayerControls();
         }
 
@@ -59,23 +71,24 @@ public class GameManager : MonoBehaviour
     {
         int index = (int)(Random.Range(0, this.listSpawnPoints.Length - 1));
         Transform randomTransform = this.listSpawnPoints[index].transform;
-        GameObject playerObj = Instantiate(characterPrefab, randomTransform.position, randomTransform.rotation);
-        this.player = playerObj.GetComponent<SnapGridCharacter>();
-        // Cannot use this here (playerObj is not fully ready I guess.
-        // playerObj.GetComponent<SnapGridCharacter>().UsePlayerControls();
+        
+        this.player = this.listCharacters[0].GetComponent<SnapGridCharacter>();
+        this.player.gameObject.transform.position = randomTransform.position;
+        // Hack: calling UsePlayerControls() here bugs
     }
 
     public void SpawnRandomAIs()
     {
-        // Nb AI == total - 1 because one player
-        for(int k = 0; k < 7; ++k)
+        // In list, pos[0] is the player
+        for(int k = 1; k < 8; ++k)
         {
             int index = (int)(Random.Range(0, this.listSpawnPoints.Length - 1));
             Transform randomTransform = this.listSpawnPoints[index].transform;
-            GameObject characterAI = Instantiate(characterPrefab, randomTransform.position, randomTransform.rotation);
+
+            this.listCharacters[k].gameObject.transform.position = randomTransform.position;
 
             // Add in synchro conductor
-            this.conductor.AddBrick(new Brick_SnapGridMoveAI(characterAI.GetComponent<SnapGridAIController>()));
+            this.conductor.AddBrick(new Brick_SnapGridMoveAI(this.listCharacters[k].GetComponent<SnapGridAIController>()));
         }
     }
 
