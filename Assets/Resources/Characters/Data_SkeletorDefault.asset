@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cc601014c3d741877c8db26a65e7f, type: 3}
   m_Name: Data_SkeletorDefault
   m_EditorClassIdentifier: 
-  sprite: {fileID: 5231579230461821630, guid: 0b5f2508f2c6b7947a9f6a47c4892bf5, type: 3}
+  spriteIdle1: {fileID: 5231579230461821630, guid: 0b5f2508f2c6b7947a9f6a47c4892bf5,
+    type: 3}
+  spriteIdel2: {fileID: 3361207598298999195, guid: 0b5f2508f2c6b7947a9f6a47c4892bf5,
+    type: 3}
+  spriteKilled: {fileID: 2287198923166893528, guid: 0b5f2508f2c6b7947a9f6a47c4892bf5,
+    type: 3}
+  characterName: Skeletor
+  characterDescription: Super cool skeletor

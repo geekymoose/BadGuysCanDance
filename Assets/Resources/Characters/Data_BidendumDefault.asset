@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cc601014c3d741877c8db26a65e7f, type: 3}
   m_Name: Data_BidendumDefault
   m_EditorClassIdentifier: 
-  sprite: {fileID: -234673146040470615, guid: fabc5ed613052b842b2dc3f420db77c3, type: 3}
+  spriteIdle1: {fileID: -234673146040470615, guid: fabc5ed613052b842b2dc3f420db77c3,
+    type: 3}
+  spriteIdel2: {fileID: -361946893338084907, guid: fabc5ed613052b842b2dc3f420db77c3,
+    type: 3}
+  spriteKilled: {fileID: 7228615682679520362, guid: fabc5ed613052b842b2dc3f420db77c3,
+    type: 3}
+  characterName: Bibendum
+  characterDescription: Super cool Bibendum

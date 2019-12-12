@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cc601014c3d741877c8db26a65e7f, type: 3}
   m_Name: Data_TerminatorDefault
   m_EditorClassIdentifier: 
-  sprite: {fileID: 123516626898696768, guid: e3c606ff301a52a478264ad87fb477b6, type: 3}
+  spriteIdle1: {fileID: 123516626898696768, guid: e3c606ff301a52a478264ad87fb477b6,
+    type: 3}
+  spriteIdel2: {fileID: 5827591163796089004, guid: e3c606ff301a52a478264ad87fb477b6,
+    type: 3}
+  spriteKilled: {fileID: 422417951298481011, guid: e3c606ff301a52a478264ad87fb477b6,
+    type: 3}
+  characterName: Terminator
+  characterDescription: Super cool Terminator

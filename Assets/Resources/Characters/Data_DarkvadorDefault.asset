@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cc601014c3d741877c8db26a65e7f, type: 3}
   m_Name: Data_DarkvadorDefault
   m_EditorClassIdentifier: 
-  sprite: {fileID: -7430335529559258678, guid: 40478a9607fd4e64b8375f8f47438e58, type: 3}
+  spriteIdle1: {fileID: -7430335529559258678, guid: 40478a9607fd4e64b8375f8f47438e58,
+    type: 3}
+  spriteIdel2: {fileID: -8592441196989832065, guid: 40478a9607fd4e64b8375f8f47438e58,
+    type: 3}
+  spriteKilled: {fileID: -5567867075456877352, guid: 40478a9607fd4e64b8375f8f47438e58,
+    type: 3}
+  characterName: DarthVader
+  characterDescription: Super cool DarthVader

@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cc601014c3d741877c8db26a65e7f, type: 3}
   m_Name: Data_JokerDefault
   m_EditorClassIdentifier: 
-  sprite: {fileID: -3391280292779420853, guid: eb4219c39daffd749a237a4116e72c49, type: 3}
+  spriteIdle1: {fileID: -3391280292779420853, guid: eb4219c39daffd749a237a4116e72c49,
+    type: 3}
+  spriteIdel2: {fileID: 9028875625598475560, guid: eb4219c39daffd749a237a4116e72c49,
+    type: 3}
+  spriteKilled: {fileID: 1805973166484158649, guid: eb4219c39daffd749a237a4116e72c49,
+    type: 3}
+  characterName: Joker
+  characterDescription: Super cool Joker

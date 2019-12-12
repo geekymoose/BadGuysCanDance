@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cc601014c3d741877c8db26a65e7f, type: 3}
   m_Name: Data_CaDefault
   m_EditorClassIdentifier: 
-  sprite: {fileID: -6199483144395169930, guid: 0bfa114696d3df144b6fe2c2f5a0c43a, type: 3}
+  spriteIdle1: {fileID: -6199483144395169930, guid: 0bfa114696d3df144b6fe2c2f5a0c43a,
+    type: 3}
+  spriteIdel2: {fileID: -8420183975333399730, guid: 0bfa114696d3df144b6fe2c2f5a0c43a,
+    type: 3}
+  spriteKilled: {fileID: -6805435261922891113, guid: 0bfa114696d3df144b6fe2c2f5a0c43a,
+    type: 3}
+  characterName: Ca
+  characterDescription: Super cool Ca

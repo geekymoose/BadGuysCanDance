@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220cc601014c3d741877c8db26a65e7f, type: 3}
   m_Name: Data_JasonDefault
   m_EditorClassIdentifier: 
-  sprite: {fileID: 1211294821960565119, guid: 92ce094d8cf8e52488158abc8fe0325e, type: 3}
+  spriteIdle1: {fileID: 1211294821960565119, guid: 92ce094d8cf8e52488158abc8fe0325e,
+    type: 3}
+  spriteIdel2: {fileID: 7102227196291813645, guid: 92ce094d8cf8e52488158abc8fe0325e,
+    type: 3}
+  spriteKilled: {fileID: -5250636120078054472, guid: 92ce094d8cf8e52488158abc8fe0325e,
+    type: 3}
+  characterName: Jason
+  characterDescription: Super cool Jason
