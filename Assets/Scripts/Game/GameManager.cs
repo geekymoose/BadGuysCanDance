@@ -9,15 +9,17 @@ public class GameManager : MonoBehaviour
 
     public Transform[] listSpawnPoints;
     public GameObject characterPrefab;
+    public CharacterData[] listCharacterData;
 
     private Conductor conductor;
-    private SnapGridCharacter player;
     private int countCharacters = 8; // Hard coded to 8 characters
     private List<Character> listCharacters;
+    private int playerIndexInList;
+    private SnapGridCharacter player;
 
     private bool areAIspaned = false;
     private float spawningAIsAccumulator = 0.0f;
-    private float spawningAIsAfterSeconds = 5.0f; // Hard coded. AIs spawns in X seconds
+    private float spawningAIsAfterSeconds = 6.0f; // Hard coded. AIs spawns in X seconds
 
 
     private void Start()
@@ -27,6 +29,8 @@ public class GameManager : MonoBehaviour
         this.conductor = this.GetComponent<Conductor>();
         this.listCharacters = new List<Character>(this.countCharacters);
 
+        Assert.IsNotNull(this.listCharacterData, "Missing asset");
+        Assert.IsTrue(this.listCharacterData.Length == this.countCharacters, "Invalid asset value");
         Assert.IsNotNull(this.gameOverEvent, "Missing asset");
         Assert.IsTrue(this.listSpawnPoints.Length != 0, "Missing asset");
         Assert.IsNotNull(this.characterPrefab, "Missing asset");
@@ -39,6 +43,7 @@ public class GameManager : MonoBehaviour
             Assert.IsNotNull(characterObj.GetComponent<Character>(), "Invalid prefab");
             this.listCharacters.Add(characterObj.GetComponent<Character>());
             characterObj.transform.position = new Vector3(50.0f, 0.0f, 0.0f); // Hack: place outside (I had issue with SetActive to false)
+            characterObj.GetComponent<Character>().GiveIdentityToThisPoorCharacter(this.listCharacterData[k]);
         }
 
         this.SpawnRandomPlayer();
@@ -69,19 +74,26 @@ public class GameManager : MonoBehaviour
 
     public void SpawnRandomPlayer()
     {
-        int index = (int)(Random.Range(0, this.listSpawnPoints.Length - 1));
-        Transform randomTransform = this.listSpawnPoints[index].transform;
+        int randomIndex = (int)(Random.Range(0, this.listSpawnPoints.Length - 1));
+        Transform randomTransform = this.listSpawnPoints[randomIndex].transform;
+
+        this.playerIndexInList = (int)(Random.Range(0, this.listCharacters.Count - 1));
         
-        this.player = this.listCharacters[0].GetComponent<SnapGridCharacter>();
+        this.player = this.listCharacters[this.playerIndexInList].GetComponent<SnapGridCharacter>();
         this.player.gameObject.transform.position = randomTransform.position;
         // Hack: calling UsePlayerControls() here bugs
     }
 
     public void SpawnRandomAIs()
     {
-        // In list, pos[0] is the player
-        for(int k = 1; k < 8; ++k)
+        for(int k = 0; k < 7; ++k)
         {
+            if(k == this.playerIndexInList)
+            {
+                // Bypass the player
+                continue;
+            }
+
             int index = (int)(Random.Range(0, this.listSpawnPoints.Length - 1));
             Transform randomTransform = this.listSpawnPoints[index].transform;
 

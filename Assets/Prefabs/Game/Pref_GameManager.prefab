@@ -167,6 +167,15 @@ MonoBehaviour:
   - {fileID: 0}
   characterPrefab: {fileID: 2123795717229350390, guid: bfbf99987b8c1c54eae6556f4536425a,
     type: 3}
+  listCharacterData:
+  - {fileID: 11400000, guid: 89d22368bdf1e6f459a556605287ef75, type: 2}
+  - {fileID: 11400000, guid: e060f381907a49f41bafc24ffc726cd3, type: 2}
+  - {fileID: 11400000, guid: 400a2456223829e43b5afff56e3da96c, type: 2}
+  - {fileID: 11400000, guid: 718510d0a3f987f4fa2eb2c2143bd3fb, type: 2}
+  - {fileID: 11400000, guid: e30d0fbe819f0d140beb2177a3d5db07, type: 2}
+  - {fileID: 11400000, guid: 50c5b9309b180764785188d6037d9c11, type: 2}
+  - {fileID: 11400000, guid: 995c597c5b1e60e42ad6b8ed61dbd944, type: 2}
+  - {fileID: 11400000, guid: ff3ac4240aff3c840b06f27e3b164a33, type: 2}
 --- !u!114 &-1818918460956040993
 MonoBehaviour:
   m_ObjectHideFlags: 0
