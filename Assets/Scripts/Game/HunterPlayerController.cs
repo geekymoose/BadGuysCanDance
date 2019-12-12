@@ -7,17 +7,33 @@ public class HunterPlayerController : MonoBehaviour
     [SerializeField]
     private float reloadSpeedInSec = 0.5f;
 
+    [Tooltip("Cross display")]
+    [SerializeField]
+    private Texture2D crossTexture;
+
     private float reloadAccumulatorInSec = 0.0f;
 
-
-    public void OnInputFire(InputAction.CallbackContext context)
-    {
-        this.Fire();
-    }
 
     private void Update()
     {
         this.reloadAccumulatorInSec -= Time.deltaTime;
+    }
+
+    private void Start()
+    {
+        // Center of the texture is where the actual mouse click is
+        Vector2 offset = new Vector2(this.crossTexture.width / 2, this.crossTexture.height / 2);
+        Cursor.SetCursor(this.crossTexture, offset, CursorMode.Auto);
+    }
+
+    private void OnDisable()
+    {
+        //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
+
+    public void OnInputFire(InputAction.CallbackContext context)
+    {
+        this.Fire();
     }
 
     public bool CanFire()
