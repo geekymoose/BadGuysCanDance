@@ -11,6 +11,14 @@ public class GameManager : MonoBehaviour
     public GameObject characterPrefab;
     public CharacterData[] listCharacterData;
 
+    [SerializeField]
+    [Tooltip("Phase 2 starts as soon as this number of players is reached")]
+    private int phase2StartAtNbPlayer = 5;
+
+    [SerializeField]
+    [Tooltip("Phase 3 starts as soon as this number of players is reached")]
+    private int phase3StartAtNbPlayer = 3;
+
     private Conductor conductor;
     private int countCharacters = 8; // Hard coded to 8 characters
     private List<Character> listCharacters;
@@ -86,7 +94,7 @@ public class GameManager : MonoBehaviour
 
     public void SpawnRandomAIs()
     {
-        for(int k = 0; k < 7; ++k)
+        for(int k = 0; k < this.countCharacters; ++k)
         {
             if(k == this.playerIndexInList)
             {
@@ -117,11 +125,11 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("OnPlayerKilledEvent received");
         countCharacters--;
-        if(countCharacters == 4)
+        if(countCharacters == this.phase2StartAtNbPlayer)
         {
             AkSoundEngine.PostEvent("Set_State_Phase2", gameObject);
         }
-        else if(countCharacters == 2)
+        else if(countCharacters == this.phase3StartAtNbPlayer)
         {
             AkSoundEngine.PostEvent("Set_State_Phase3", gameObject);
         }
