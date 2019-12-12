@@ -4,9 +4,6 @@ using UnityEngine.InputSystem;
 
 public class SnapGridCharacter : MonoBehaviour
 {
-    public GameEvent eventAIKilled;
-    public GameEvent eventPlayerKilled;
-
     private SnapGridAIController AIController;
     private SnapGridPlayerController playerController;
     private PlayerInput playerInput;
@@ -21,9 +18,6 @@ public class SnapGridCharacter : MonoBehaviour
         Assert.IsNotNull(this.AIController, "Missing asset");
         Assert.IsNotNull(this.playerController, "Missing asset");
         Assert.IsNotNull(this.playerInput, "Missing asset");
-        
-        Assert.IsNotNull(this.eventPlayerKilled, "Missing asset");
-        Assert.IsNotNull(this.eventAIKilled, "Missing asset");
 
         // By default, use AI
         this.UseAIControls();
@@ -51,26 +45,5 @@ public class SnapGridCharacter : MonoBehaviour
     public bool IsPlayerControlled()
     {
         return this.playerController.enabled == true;
-    }
-
-    public void Kill()
-    {
-        if(this.IsAIControls())
-        {
-            Debug.Log("Killing AI character");
-            this.eventAIKilled.Raise();
-        }
-        else if(this.IsPlayerControlled())
-        {
-            Debug.Log("Killing player character");
-            this.eventPlayerKilled.Raise();
-        }
-
-        // TODO play sounds
-        this.AIController.enabled = false;
-        this.playerController.enabled = false;
-        this.playerInput.enabled = false;
-
-        this.transform.gameObject.SetActive(false);
     }
 }

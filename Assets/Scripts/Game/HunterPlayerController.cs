@@ -12,7 +12,7 @@ public class HunterPlayerController : MonoBehaviour
 
         if (hitInfo.collider != null)
         {
-            SnapGridCharacter character = hitInfo.transform.gameObject.GetComponentInParent<SnapGridCharacter>();
+            Character character = hitInfo.transform.gameObject.GetComponentInParent<Character>();
             if (character != null)
             {
                 character.Kill();

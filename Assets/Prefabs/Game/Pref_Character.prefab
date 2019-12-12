@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: -341495872316558668}
   - component: {fileID: 4011327434269067735}
   - component: {fileID: 6293449883086563033}
+  - component: {fileID: -5526922081464127369}
   m_Layer: 0
   m_Name: Pref_SnapGridCharacter
   m_TagString: Untagged
@@ -318,6 +319,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79b63fec3e56b3f40a8b926241319546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5526922081464127369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123795717229350390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3cae7e8a5ac45143977ba12ba2defd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eventAIKilled: {fileID: 11400000, guid: c8e1806f24d0964478caf453002f8996, type: 2}
