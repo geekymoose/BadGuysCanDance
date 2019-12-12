@@ -20,3 +20,4 @@ MonoBehaviour:
     type: 3}
   characterName: Ca
   characterDescription: Super cool Ca
+  soundKilledEventName: Play_SFX_Death_Pennywise

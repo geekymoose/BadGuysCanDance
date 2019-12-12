@@ -20,3 +20,4 @@ MonoBehaviour:
     type: 3}
   characterName: DarthVader
   characterDescription: Super cool DarthVader
+  soundKilledEventName: Play_SFX_Death_Vader

@@ -20,3 +20,4 @@ MonoBehaviour:
     type: 3}
   characterName: Terminator
   characterDescription: Super cool Terminator
+  soundKilledEventName: Play_SFX_Death_Terminator

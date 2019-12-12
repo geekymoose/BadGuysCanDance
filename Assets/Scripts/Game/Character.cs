@@ -42,6 +42,7 @@ public class Character : MonoBehaviour
             this.eventPlayerKilled.Raise();
         }
 
+        AkSoundEngine.PostEvent(this.characterData.soundKilledEventName, gameObject);
         this.gameObject.SetActive(false);
     }
 

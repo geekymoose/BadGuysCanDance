@@ -9,4 +9,5 @@ public class CharacterData : ScriptableObject
 
     public string characterName;
     public string characterDescription;
+    public string soundKilledEventName;
 }
