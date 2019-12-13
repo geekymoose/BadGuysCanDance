@@ -71,6 +71,7 @@ public class HunterPlayerController : MonoBehaviour
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector2 mouseWorldPos2D = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
 
+        Physics2D.queriesStartInColliders = true;
         RaycastHit2D hitInfo = Physics2D.Raycast(mouseWorldPos2D, Vector2.zero);
 
         // Laser

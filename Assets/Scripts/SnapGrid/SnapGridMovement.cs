@@ -30,7 +30,6 @@ public class SnapGridMovement : MonoBehaviour
     private Vector3 targetPosition;
     private float moveReloadAccumulatorInSec = 0.0f; // Remaining time before next available move
     private SnapGridMovementState movementState = SnapGridMovementState.IDLE;
-    private Collider2D localCollider; // Collider of this object
 
     private bool canMove = true;
 
@@ -40,10 +39,8 @@ public class SnapGridMovement : MonoBehaviour
     private void Start()
     {
         this.canMove = true;
-        this.localCollider = this.GetComponentInChildren<Collider2D>();
         this.movementState = SnapGridMovementState.IDLE;
-
-        Assert.IsNotNull(this.localCollider, "Missing asset in component");
+        
         Assert.IsNotNull(this.snapGridData, "Missing asset in component");
     }
 
@@ -118,29 +115,24 @@ public class SnapGridMovement : MonoBehaviour
     {
         Vector2 moveVector = GetNormVectorFromDirection(direction) * this.snapGridData.snapDistanceInUnityUnits;
 
-        // Check that the target position is not already in use (this is pretty ugly but it's a gamejam)
-        RaycastHit2D[] hits = Physics2D.RaycastAll(this.transform.position, moveVector, this.snapGridData.snapDistanceInUnityUnits);
+        Physics2D.queriesStartInColliders = false;
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, moveVector, this.snapGridData.snapDistanceInUnityUnits);
 
-        bool canMove = true;
-        foreach (RaycastHit2D hit in hits)
+        if(hit.collider == null)
         {
-            if (hit.collider == this.localCollider)
-            {
-                continue;
-            }
-            else if(hit.distance < 0.5f)
-            {
-                // HACK: This is a quickfix. In some situation, NPC stacks and get locked.
-                // This make sure that, in this unexpected situation, they can exceptionally move.
-                continue;
-            }
-            else
-            {
-                canMove = false;
-                break;
-            }
+            return true;
         }
-        return canMove;
+#if false
+        // TODO: Check if still used
+        else if (hit.distance <= 0.1f)
+        {
+            // HACK: This is a quickfix. In some situation, AIs stacks and get locked.
+            // This make sure that, in this unexpected situation, they can exceptionally move.
+            Assert.IsTrue(false, "Unexpected situation happened");
+            return true;
+        }
+#endif
+        return false;
     }
 
     public bool Move(Vector2 moveVectDirection)
