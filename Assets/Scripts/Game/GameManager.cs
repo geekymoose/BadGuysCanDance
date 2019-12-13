@@ -26,7 +26,10 @@ public class GameManager : MonoBehaviour
 
     private bool areAIspaned = false;
     private float spawningAIsAccumulator = 0.0f;
-    private float spawningAIsAfterSeconds = 4.0f; // Hard coded. AIs spawns in X seconds
+
+    [SerializeField]
+    [Tooltip("Amount of time (in seconds) before the AIs spawn")]
+    private float spawningAIsAfterSeconds = 6.0f;
 
 
     public void Start()
