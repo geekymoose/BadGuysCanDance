@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
@@ -49,5 +50,11 @@ public class GameOverMenu : MonoBehaviour
     {
         Debug.Log("HideGameOverHUD");
         this.gameOverHUD.SetActive(false);
+    }
+
+    public void GoBackToWelcomePage()
+    {
+        Debug.Log("Go back to welcome page");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
