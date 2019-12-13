@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1534774062}
   - component: {fileID: 1534774061}
   m_Layer: 0
-  m_Name: SnapGridBackground
+  m_Name: GridAndBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3678451771099807637}
-  m_RootOrder: 3
+  m_Father: {fileID: 2204077047803043068}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1534774061
 SpriteRenderer:
@@ -855,9 +855,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6204116340214083913}
   - component: {fileID: 2459616868413041604}
-  - component: {fileID: 4481620820608876976}
   m_Layer: 0
-  m_Name: Sprite_SnapGrid
+  m_Name: GridOnly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -874,8 +873,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3678451771099807637}
-  m_RootOrder: 4
+  m_Father: {fileID: 2204077047803043068}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2459616868413041604
 SpriteRenderer:
@@ -926,22 +925,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &4481620820608876976
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800933685362654193}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d8ba8eaef0907424796b86a8674f9a40, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: d8ba8eaef0907424796b86a8674f9a40, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1865367664442245319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3678451771099807637}
   m_Layer: 0
-  m_Name: Pref_SnapGrid
+  m_Name: Pref_Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2119,8 +2102,7 @@ Transform:
   - {fileID: 1711236114899772543}
   - {fileID: 2677218554910165041}
   - {fileID: 1716755249581150079}
-  - {fileID: 1534774062}
-  - {fileID: 6204116340214083913}
+  - {fileID: 2204077047803043068}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3933,6 +3915,55 @@ Transform:
   m_Father: {fileID: 7447981562764799582}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7643318516332086872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2204077047803043068}
+  - component: {fileID: 5554849297397656278}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2204077047803043068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643318516332086872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1534774062}
+  - {fileID: 6204116340214083913}
+  m_Father: {fileID: 3678451771099807637}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &5554849297397656278
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643318516332086872}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d8ba8eaef0907424796b86a8674f9a40, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: d8ba8eaef0907424796b86a8674f9a40, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7651756571946719009
 GameObject:
   m_ObjectHideFlags: 0
