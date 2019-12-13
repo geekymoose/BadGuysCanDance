@@ -78,7 +78,7 @@ public class HunterPlayerController : MonoBehaviour
         float randomValue = Random.Range(0, 10000);
         int randomBarrelIndex = (int)(randomValue % this.listShootBarrelPoints.Length);
         this.laserLine.SetPosition(0, this.listShootBarrelPoints[randomBarrelIndex].transform.position);
-        this.laserLine.SetPosition(1, mouseWorldPos);
+        this.laserLine.SetPosition(1, new Vector3(mouseWorldPos.x, mouseWorldPos.y, this.transform.position.z));
         this.laserAnimation.Play();
 
         if (hitInfo.collider != null)
