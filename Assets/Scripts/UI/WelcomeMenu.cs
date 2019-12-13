@@ -10,14 +10,14 @@ public class WelcomeMenu : MonoBehaviour
         AkSoundEngine.PostEvent("Set_State_Menu", gameObject);
     }
 
-    public void startGame()
+    public void StartGame()
     {
         Debug.Log("Start game");
         AkSoundEngine.PostEvent("Stop_SW_Music", gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void quit()
+    public void QuitGame()
     {
         Debug.Log("Quit game");
         // TODO Quit sound

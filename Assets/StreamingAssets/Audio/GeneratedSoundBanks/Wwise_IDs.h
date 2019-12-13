@@ -34,6 +34,7 @@ namespace AK
         static const AkUniqueID SET_STATE_PHASE1 = 1799566026U;
         static const AkUniqueID SET_STATE_PHASE2 = 1799566025U;
         static const AkUniqueID SET_STATE_PHASE3 = 1799566024U;
+        static const AkUniqueID STOP_SW_MUSIC = 3118878238U;
     } // namespace EVENTS
 
     namespace STATES

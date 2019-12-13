@@ -42,6 +42,7 @@
 				<Event Id="1799566026" Name="Set_State_Phase1" ObjectPath="\Events\Default Work Unit\Set_State_Phase1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1799566025" Name="Set_State_Phase2" ObjectPath="\Events\Default Work Unit\Set_State_Phase2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1799566024" Name="Set_State_Phase3" ObjectPath="\Events\Default Work Unit\Set_State_Phase3" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3118878238" Name="Stop_SW_Music" ObjectPath="\Events\Default Work Unit\Stop_SW_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2072812" Language="SFX">

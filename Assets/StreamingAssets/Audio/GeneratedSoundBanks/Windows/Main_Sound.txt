@@ -15,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2302270969	Set_State_Menu			\Default Work Unit\Set_State_Menu	
 	2681111161	Play_SFX_Laser_Hit			\Default Work Unit\Play_SFX_Laser_Hit	
 	3055616074	Set_State_Menu_InMusic			\Default Work Unit\Set_State_Menu_InMusic	
+	3118878238	Stop_SW_Music			\Default Work Unit\Stop_SW_Music	
 	3196001096	Play_SFX_Death_Jason			\Default Work Unit\Play_SFX_Death_Jason	
 	3491373059	Play_SFX_Death_Pennywise			\Default Work Unit\Play_SFX_Death_Pennywise	
 	3678284003	Play_SFX_Laser_Shoot			\Default Work Unit\Play_SFX_Laser_Shoot	
