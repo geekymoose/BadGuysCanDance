@@ -349,6 +349,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1422354621 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 4481620820608876976, guid: dd399cb17974c8648976c29767d9089d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3678451772644525011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1443410940 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5355618211642611224, guid: 332b30da37c2cde40ba8a33473e61fc9,
@@ -1018,6 +1024,11 @@ PrefabInstance:
       propertyPath: listSpawnPoints.Array.data[116]
       value: 
       objectReference: {fileID: 3678451772644525012}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: gridBeatAnimation
+      value: 
+      objectReference: {fileID: 1422354621}
     - target: {fileID: 4936439583829563290, guid: 98c3c000075830c488d792546d7cb793,
         type: 3}
       propertyPath: m_LocalPosition.x

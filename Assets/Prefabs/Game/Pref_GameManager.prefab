@@ -179,6 +179,7 @@ MonoBehaviour:
   phase2StartAtNbPlayer: 5
   phase3StartAtNbPlayer: 3
   spawningAIsAfterSeconds: 6
+  gridBeatAnimation: {fileID: 0}
 --- !u!114 &-1818918460956040993
 MonoBehaviour:
   m_ObjectHideFlags: 0
