@@ -122,16 +122,6 @@ public class SnapGridMovement : MonoBehaviour
         {
             return true;
         }
-#if false
-        // TODO: Check if still used
-        else if (hit.distance <= 0.1f)
-        {
-            // HACK: This is a quickfix. In some situation, AIs stacks and get locked.
-            // This make sure that, in this unexpected situation, they can exceptionally move.
-            Assert.IsTrue(false, "Unexpected situation happened");
-            return true;
-        }
-#endif
         return false;
     }
 

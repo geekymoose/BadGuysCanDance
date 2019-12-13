@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapGridData: {fileID: 11400000, guid: 48efaa0b481c60f489f4ca317e669cb7, type: 2}
-  moveDurationInSec: 0.5
+  moveDurationInSec: 0.2
 --- !u!114 &6293449883086563033
 MonoBehaviour:
   m_ObjectHideFlags: 0
