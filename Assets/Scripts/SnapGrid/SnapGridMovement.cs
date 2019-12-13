@@ -26,10 +26,11 @@ public class SnapGridMovement : MonoBehaviour
     [SerializeField]
     [Tooltip("Time it takes to go from current position to the next position (jump time)")]
     private float moveDurationInSec = 0.5f;
-    
-    private Vector3 targetPosition;
+
     private float moveReloadAccumulatorInSec = 0.0f; // Remaining time before next available move
     private SnapGridMovementState movementState = SnapGridMovementState.IDLE;
+
+    private SpriteRenderer spriteRenderer;
 
     private bool canMove = true;
 
@@ -38,10 +39,14 @@ public class SnapGridMovement : MonoBehaviour
 
     private void Start()
     {
+        this.spriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
+        Assert.IsNotNull(this.spriteRenderer, "Missing asset");
+
         this.canMove = true;
         this.movementState = SnapGridMovementState.IDLE;
         
-        Assert.IsNotNull(this.snapGridData, "Missing asset in component");
+        Assert.IsNotNull(this.snapGridData, "Missing asset");
+        Assert.IsTrue(this.moveDurationInSec > 0.0f, "Missing asset");
     }
 
     private void Update()
@@ -55,6 +60,9 @@ public class SnapGridMovement : MonoBehaviour
         {
             this.movementState = SnapGridMovementState.MOVING;
         }
+
+        float t = this.moveDurationInSec - this.moveReloadAccumulatorInSec;
+        this.spriteRenderer.transform.position = Vector3.Lerp(this.spriteRenderer.transform.position, this.transform.position, t);
     }
 
     private void OnEnable()
@@ -171,9 +179,11 @@ public class SnapGridMovement : MonoBehaviour
             Vector2 moveVector = GetNormVectorFromDirection(moveDirection) * this.snapGridData.snapDistanceInUnityUnits;
             Debug.DrawLine(this.transform.position, this.transform.position + new Vector3(moveVector.x, moveVector.y, 0.0f), Color.yellow, 0.5f);
 
+            Vector3 oldPosition = this.transform.position;
             this.moveReloadAccumulatorInSec = this.moveDurationInSec;
             this.movementState = SnapGridMovementState.MOVING;
             this.transform.Translate(moveVector);
+            this.spriteRenderer.transform.position = oldPosition; // The sprite stays at the old position. Then lerp to new
             return true;
         }
         
