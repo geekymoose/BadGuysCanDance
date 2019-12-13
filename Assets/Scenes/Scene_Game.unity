@@ -2072,6 +2072,11 @@ PrefabInstance:
       propertyPath: Callbacks.Array.data[1].GameObject
       value: 
       objectReference: {fileID: 366593410}
+    - target: {fileID: 4129656655711864461, guid: eff56f03361cb154dbe1fcab0f4bc435,
+        type: 3}
+      propertyPath: unloadTriggerList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eff56f03361cb154dbe1fcab0f4bc435, type: 3}
 --- !u!1001 &5355618210938529252
@@ -2190,11 +2195,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432840275056680082, guid: 332b30da37c2cde40ba8a33473e61fc9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1605490544451187158, guid: 332b30da37c2cde40ba8a33473e61fc9,
         type: 3}

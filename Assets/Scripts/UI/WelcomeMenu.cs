@@ -13,6 +13,7 @@ public class WelcomeMenu : MonoBehaviour
     public void StartGame()
     {
         Debug.Log("Start game");
+        AkSoundEngine.PostEvent("Play_SFX_Buttonclick", gameObject);
         AkSoundEngine.PostEvent("Stop_SW_Music", gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -20,8 +21,8 @@ public class WelcomeMenu : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quit game");
-        // TODO Quit sound
-        //AkSoundEngine.PostEvent("TODO", gameObject);
+        AkSoundEngine.PostEvent("Play_SFX_Buttonclick", gameObject);
+        AkSoundEngine.PostEvent("Stop_SW_Music", gameObject);
         Application.Quit();
     }
 }
