@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Animation gridBeatAnimation;
 
+    [SerializeField]
+    private Animation gridBarAnimation;
+
 
     public void Start()
     {
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
         this.listCharacters = new List<Character>(this.countCharacters);
 
         Assert.IsNotNull(this.gridBeatAnimation, "Missing asset");
+        Assert.IsNotNull(this.gridBarAnimation, "Missing asset");
         Assert.IsNotNull(this.listCharacterData, "Missing asset");
         Assert.IsTrue(this.listCharacterData.Length >= this.countCharacters, "Invalid asset value");
         Assert.IsNotNull(this.gameOverEvent, "Missing asset");
@@ -63,7 +67,7 @@ public class GameManager : MonoBehaviour
 
         AkSoundEngine.PostEvent("Set_State_Phase0", gameObject);
 
-        this.conductor.AddBrick(new Brick_SnapGridBeatAnim(this.gridBeatAnimation));
+        this.conductor.AddBrick(new Brick_SnapGridBeatAnim(this.gridBeatAnimation, this.gridBarAnimation));
     }
 
     private void Update()

@@ -6,10 +6,12 @@ using UnityEngine;
 public class Brick_SnapGridBeatAnim : Brick
 {
     private Animation animBeat;
+    private Animation animBar;
 
-    public Brick_SnapGridBeatAnim(Animation anim)
+    public Brick_SnapGridBeatAnim(Animation animBeat, Animation animBar)
     {
-        this.animBeat = anim;
+        this.animBeat = animBeat;
+        this.animBar = animBar;
     }
 
     public void ApplyBeat()
@@ -19,6 +21,6 @@ public class Brick_SnapGridBeatAnim : Brick
 
     public void ApplyBar()
     {
-        // Nothing
+        this.animBar.Play();
     }
 }

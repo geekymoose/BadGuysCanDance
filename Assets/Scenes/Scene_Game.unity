@@ -1023,6 +1023,11 @@ PrefabInstance:
       propertyPath: gridBeatAnimation
       value: 
       objectReference: {fileID: 3678451772644525129}
+    - target: {fileID: -2720847273030679158, guid: 98c3c000075830c488d792546d7cb793,
+        type: 3}
+      propertyPath: gridBarAnimation
+      value: 
+      objectReference: {fileID: 3678451772644525130}
     - target: {fileID: 4936439583829563290, guid: 98c3c000075830c488d792546d7cb793,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1214,16 +1219,6 @@ PrefabInstance:
     - target: {fileID: 3678451771099807637, guid: dd399cb17974c8648976c29767d9089d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800933685362654193, guid: dd399cb17974c8648976c29767d9089d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5554849297397656278, guid: dd399cb17974c8648976c29767d9089d,
-        type: 3}
-      propertyPath: m_PlayAutomatically
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1933,6 +1928,12 @@ Transform:
 --- !u!111 &3678451772644525129 stripped
 Animation:
   m_CorrespondingSourceObject: {fileID: 5554849297397656278, guid: dd399cb17974c8648976c29767d9089d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3678451772644525011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &3678451772644525130 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 8152729889057259026, guid: dd399cb17974c8648976c29767d9089d,
     type: 3}
   m_PrefabInstance: {fileID: 3678451772644525011}
   m_PrefabAsset: {fileID: 0}
