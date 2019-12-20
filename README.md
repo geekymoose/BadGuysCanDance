@@ -1,5 +1,7 @@
 # Bad Guys Can Dance
 
+![screenshot](Assets/Sprites/UI/Sprite_logo.png)
+
 > - 2 players game made for a Ubisoft Gamejam 2019 (72 hours).
 > - The theme was "Wait... Are we the bad guys?".
 
@@ -32,6 +34,13 @@ The hunter player has to eliminate the dancer player without killing innocent da
 ## Known BUGs
 
 - In the game recap, Skeletor is never displayed as killed, even if was killed (this appears only in the final build, not in the Unity editor).
+- The laser cursor is not displayed in the sreenshots
+
+## Screenshots
+
+![screenshot](Screenshots/2019_12_20_Screenshot_01.png)
+![screenshot](Screenshots/2019_12_20_Screenshot_02.png)
+![screenshot](Screenshots/2019_12_20_Screenshot_03.png)
 
 ## Authors
 
