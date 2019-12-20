@@ -120,18 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &41267336 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2082477867, guid: 43730235bddebf447a2f9524c9253457,
-    type: 3}
-  m_PrefabInstance: {fileID: 5684218336389554550}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95178980c833d6042ab6da2d2e227733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &73732601
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,18 +603,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1718360262, guid: 43730235bddebf447a2f9524c9253457, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 41267336}
-    - target: {fileID: 1718360262, guid: 43730235bddebf447a2f9524c9253457, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009785059, guid: 43730235bddebf447a2f9524c9253457, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43730235bddebf447a2f9524c9253457, type: 3}
