@@ -7,7 +7,7 @@
 
 ## Synopsis
 
-    In a time of neon lights, fluorescent lights, and synthwave, 8 dancers are on the floor, dressed up like 80s bad guys (e.g., Darth Vador, Joker). Turns out, one of them is the actual bad guys. Someone (the hunter outside the dance floor) knows this and has his laser ready to shoot. Will he manage to kill the true bad guy without murdering innocent peoples? In the end, who is the actual bad guy...?
+In a time of neon lights, fluorescent lights, and synthwave, 8 dancers are on the floor, dressed up like 80s bad guys (e.g., Darth Vador, Joker). Turns out, one of them is the actual bad guys. Someone (the hunter outside the dance floor) knows this and has his laser ready to shoot. Will he manage to kill the true bad guy without murdering innocent peoples? In the end, who is the actual bad guy...?
 
 ## Gameplay
 
