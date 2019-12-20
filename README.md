@@ -1,6 +1,6 @@
 # Bad Guys Can Dance
 
-![screenshot](Assets/Sprites/UI/Sprite_logo.png)
+![screenshot](Screenshots/2019_12_20_Screenshot_00.png)
 
 > - 2 players game made for a Ubisoft Gamejam 2019 (72 hours).
 > - The theme was "Wait... Are we the bad guys?".
