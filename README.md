@@ -33,6 +33,7 @@ The hunter player has to eliminate the dancer player without killing innocent da
 
 ## Known BUGs
 
+- Unfortunately, on some computers, the sound is not in sync with the movements (NPCs should move on the beat).
 - In the game recap, Skeletor is never displayed as killed, even if was killed (this appears only in the final build, not in the Unity editor).
 - The laser cursor is not displayed in the sreenshots
 
