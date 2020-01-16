@@ -2,16 +2,16 @@
 
 ![screenshot](Screenshots/2019_12_20_Screenshots_00.png)
 
-> - 2 players game made for a Ubisoft Gamejam 2019 (72 hours).
-> - The theme was "Wait... Are we the bad guys?".
+- 2 players game made for a Ubisoft Gamejam 2019 (72 hours).
+- The theme was "Wait... Are we the bad guys?".
 
 ## Synopsis
 
-In a time of neon lights, fluorescent lights, and synthwave, 8 dancers are on the floor, dressed up like 80s bad guys (e.g., Darth Vador, Joker). Turns out, one of them is the actual bad guys. Someone (the hunter outside the dance floor) knows this and has his laser ready to shoot. Will he manage to kill the true bad guy without murdering innocent peoples? In the end, who is the actual bad guy...?
+> In a time of neon lights, fluorescent lights, and synthwave, 8 dancers are on the floor, dressed up like 80s bad guys (e.g., Darth Vador, Joker). Turns out, one of them is the actual bad guys. Someone (the hunter outside the dance floor) knows this and has his laser ready to shoot. Will he manage to kill the true bad guy without murdering innocent peoples? In the end, who is the actual bad guy...?
 
 ## Gameplay
 
-> 8 dancers are on the floor, moving with the music beat. One of them is controlled by the dancer player. The second player (hunter player) has to find out who is the human controlled dancer and shoot him.
+8 dancers are on the floor, moving with the music beat. One of them is controlled by the dancer player. The second player (hunter player) has to find out who is the human controlled dancer and shoot him.
 
 ### Dancer player
 
@@ -35,7 +35,7 @@ The hunter player has to eliminate the dancer player without killing innocent da
 
 - Unfortunately, on some computers, the sound is not in sync with the movements (NPCs should move on the beat).
 - In the game recap, Skeletor is never displayed as killed, even if was killed (this appears only in the final build, not in the Unity editor).
-- The laser cursor is not displayed in the sreenshots
+- The laser cursor is not displayed in the screenshots
 
 ## Screenshots
 
