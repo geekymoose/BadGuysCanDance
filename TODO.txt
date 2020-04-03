@@ -1,3 +1,4 @@
+- Add Linux build (generate Wwise sound bank for Linux)
 - Fix the sound synchronization issue that appears on some machines (which causes a delay).
 - Fix the display issue in the game recap: Skeletor is never displayed as killed (even if he is)
 - Fix the display issue in the game recap: card titles are not correct
