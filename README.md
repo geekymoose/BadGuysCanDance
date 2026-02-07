@@ -1,6 +1,6 @@
 # Bad Guys Can Dance
 
-![screenshot](Screenshots/2019_12_20_Screenshots_00.png)
+![screenshot](Screenshots/2019-12-20_screenshot_1.png)
 
 - 2 players game made for a Ubisoft Gamejam 2019 (72 hours).
 - The theme was "Wait... Are we the bad guys?".
@@ -41,9 +41,9 @@ The hunter player has to eliminate the dancer player without killing innocent da
 
 > Warning: the laser cursor is not displayed in the screenshots
 
-![screenshot](Screenshots/2019_12_20_Screenshots_01.png)
-![screenshot](Screenshots/2019_12_20_Screenshots_02.png)
-![screenshot](Screenshots/2019_12_20_Screenshots_03.png)
+![screenshot](Screenshots/2019-12-20_screenshot_2.png)
+![screenshot](Screenshots/2019-12-20_screenshot_3.png)
+![screenshot](Screenshots/2019-12-20_screenshot_4.png)
 
 ## Authors
 
